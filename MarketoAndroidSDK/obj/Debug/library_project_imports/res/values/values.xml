@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/var/lib/jenkins/jobs/Android%20MME%20SDK/workspace/code/res/values/colors.xml -->
+    <!-- From: file:/data1/jenkins/jobs/Android_MME_SDK/workspace/code/res/values/colors.xml -->
     <eat-comment/>
     <color name="background_overlay">#cc000000</color>
     <color name="gradient_end">#98000000</color>
@@ -8,7 +8,7 @@
     <declare-styleable name="CloseButton"><attr format="enum" name="close_button_style"><enum name="style1" value="0"/><enum name="style2" value="1"/><enum name="style3" value="2"/><enum name="style4" value="3"/><enum name="style5" value="4"/></attr><attr format="color" name="close_button_tint"/></declare-styleable>
     <declare-styleable name="InAppScrollView"><attr format="fraction" name="layoutWidthPercent"/><attr format="fraction" name="layoutWidthProportion"/></declare-styleable>
     <declare-styleable name="ScalableImageView"><attr format="enum" name="scale"><enum name="both" value="0"/><enum name="width" value="1"/><enum name="height" value="2"/></attr><attr format="float" name="ratio"/></declare-styleable>
-    <!-- From: file:/var/lib/jenkins/jobs/Android%20MME%20SDK/workspace/code/res/values/dimens.xml -->
+    <!-- From: file:/data1/jenkins/jobs/Android_MME_SDK/workspace/code/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="action_button_height">46dp</dimen>
     <dimen name="action_button_min_width">250dp</dimen>
@@ -54,10 +54,10 @@
   </item>
     <item format="fraction" name="popup_layout_width_proportion" type="dimen">100%
   </item>
-    <!-- From: file:/var/lib/jenkins/jobs/Android%20MME%20SDK/workspace/code/res/values/strings.xml -->
+    <!-- From: file:/data1/jenkins/jobs/Android_MME_SDK/workspace/code/res/values/strings.xml -->
     <eat-comment/>
     <string name="content_image">image</string>
-    <!-- From: file:/var/lib/jenkins/jobs/Android%20MME%20SDK/workspace/code/res/values/styles.xml -->
+    <!-- From: file:/data1/jenkins/jobs/Android_MME_SDK/workspace/code/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppTheme" parent="android:Theme.Black.NoTitleBar"/>
     <style name="InAppTheme" parent="android:Theme.Black.NoTitleBar.Fullscreen">

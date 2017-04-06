@@ -17,8 +17,8 @@ using GLKit;
 using Metal;
 using MapKit;
 using ModelIO;
-using Security;
 using SceneKit;
+using Security;
 using AudioUnit;
 using CoreVideo;
 using CoreMedia;
@@ -70,17 +70,6 @@ namespace MarketoApi {
 			IsDirectBinding = GetType ().Assembly == global::ApiDefinition.Messaging.this_assembly;
 		}
 
-		[Export ("actionMetadata")]
-		[CompilerGenerated]
-		public virtual NSDictionary actionMetadata ()
-		{
-			if (IsDirectBinding) {
-				return  Runtime.GetNSObject<NSDictionary> (global::ApiDefinition.Messaging.IntPtr_objc_msgSend (this.Handle, Selector.GetHandle ("actionMetadata")));
-			} else {
-				return  Runtime.GetNSObject<NSDictionary> (global::ApiDefinition.Messaging.IntPtr_objc_msgSendSuper (this.SuperHandle, Selector.GetHandle ("actionMetadata")));
-			}
-		}
-		
 		[Export ("setDetails:")]
 		[CompilerGenerated]
 		public virtual void SetDetails (string details)
@@ -139,6 +128,17 @@ namespace MarketoApi {
 			}
 			NSString.ReleaseNative (nstype);
 			
+		}
+		
+		[Export ("actionMetadata")]
+		[CompilerGenerated]
+		public virtual NSDictionary actionMetadata ()
+		{
+			if (IsDirectBinding) {
+				return  Runtime.GetNSObject<NSDictionary> (global::ApiDefinition.Messaging.IntPtr_objc_msgSend (this.Handle, Selector.GetHandle ("actionMetadata")));
+			} else {
+				return  Runtime.GetNSObject<NSDictionary> (global::ApiDefinition.Messaging.IntPtr_objc_msgSendSuper (this.SuperHandle, Selector.GetHandle ("actionMetadata")));
+			}
 		}
 		
 	} /* class MarketoActionMetaData */

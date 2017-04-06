@@ -44,17 +44,17 @@ namespace Com.Marketo.Inapp.Models {
 		public unsafe InAppCloseButton (global::Org.Json.JSONObject p0)
 			: base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
 		{
-			if (Handle != IntPtr.Zero)
+			if (((global::Java.Lang.Object) this).Handle != IntPtr.Zero)
 				return;
 
 			try {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (p0);
-				if (GetType () != typeof (InAppCloseButton)) {
+				if (((object) this).GetType () != typeof (InAppCloseButton)) {
 					SetHandle (
-							global::Android.Runtime.JNIEnv.StartCreateInstance (GetType (), "(Lorg/json/JSONObject;)V", __args),
+							global::Android.Runtime.JNIEnv.StartCreateInstance (((object) this).GetType (), "(Lorg/json/JSONObject;)V", __args),
 							JniHandleOwnership.TransferLocalRef);
-					global::Android.Runtime.JNIEnv.FinishCreateInstance (Handle, "(Lorg/json/JSONObject;)V", __args);
+					global::Android.Runtime.JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, "(Lorg/json/JSONObject;)V", __args);
 					return;
 				}
 
@@ -63,7 +63,7 @@ namespace Com.Marketo.Inapp.Models {
 				SetHandle (
 						global::Android.Runtime.JNIEnv.StartCreateInstance (class_ref, id_ctor_Lorg_json_JSONObject_, __args),
 						JniHandleOwnership.TransferLocalRef);
-				JNIEnv.FinishCreateInstance (Handle, class_ref, id_ctor_Lorg_json_JSONObject_, __args);
+				JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, class_ref, id_ctor_Lorg_json_JSONObject_, __args);
 			} finally {
 			}
 		}
@@ -74,17 +74,17 @@ namespace Com.Marketo.Inapp.Models {
 		public unsafe InAppCloseButton (global::Android.OS.Parcel p0)
 			: base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
 		{
-			if (Handle != IntPtr.Zero)
+			if (((global::Java.Lang.Object) this).Handle != IntPtr.Zero)
 				return;
 
 			try {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (p0);
-				if (GetType () != typeof (InAppCloseButton)) {
+				if (((object) this).GetType () != typeof (InAppCloseButton)) {
 					SetHandle (
-							global::Android.Runtime.JNIEnv.StartCreateInstance (GetType (), "(Landroid/os/Parcel;)V", __args),
+							global::Android.Runtime.JNIEnv.StartCreateInstance (((object) this).GetType (), "(Landroid/os/Parcel;)V", __args),
 							JniHandleOwnership.TransferLocalRef);
-					global::Android.Runtime.JNIEnv.FinishCreateInstance (Handle, "(Landroid/os/Parcel;)V", __args);
+					global::Android.Runtime.JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, "(Landroid/os/Parcel;)V", __args);
 					return;
 				}
 
@@ -93,7 +93,7 @@ namespace Com.Marketo.Inapp.Models {
 				SetHandle (
 						global::Android.Runtime.JNIEnv.StartCreateInstance (class_ref, id_ctor_Landroid_os_Parcel_, __args),
 						JniHandleOwnership.TransferLocalRef);
-				JNIEnv.FinishCreateInstance (Handle, class_ref, id_ctor_Landroid_os_Parcel_, __args);
+				JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, class_ref, id_ctor_Landroid_os_Parcel_, __args);
 			} finally {
 			}
 		}
@@ -106,7 +106,7 @@ namespace Com.Marketo.Inapp.Models {
 			if (id_b == IntPtr.Zero)
 				id_b = JNIEnv.GetMethodID (class_ref, "b", "()Ljava/lang/String;");
 			try {
-				return JNIEnv.GetString (JNIEnv.CallObjectMethod  (Handle, id_b), JniHandleOwnership.TransferLocalRef);
+				return JNIEnv.GetString (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_b), JniHandleOwnership.TransferLocalRef);
 			} finally {
 			}
 		}
@@ -119,7 +119,7 @@ namespace Com.Marketo.Inapp.Models {
 			if (id_c == IntPtr.Zero)
 				id_c = JNIEnv.GetMethodID (class_ref, "c", "()Ljava/lang/String;");
 			try {
-				return JNIEnv.GetString (JNIEnv.CallObjectMethod  (Handle, id_c), JniHandleOwnership.TransferLocalRef);
+				return JNIEnv.GetString (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_c), JniHandleOwnership.TransferLocalRef);
 			} finally {
 			}
 		}
@@ -132,7 +132,7 @@ namespace Com.Marketo.Inapp.Models {
 			if (id_d == IntPtr.Zero)
 				id_d = JNIEnv.GetMethodID (class_ref, "d", "()Ljava/lang/String;");
 			try {
-				return JNIEnv.GetString (JNIEnv.CallObjectMethod  (Handle, id_d), JniHandleOwnership.TransferLocalRef);
+				return JNIEnv.GetString (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_d), JniHandleOwnership.TransferLocalRef);
 			} finally {
 			}
 		}
@@ -145,7 +145,7 @@ namespace Com.Marketo.Inapp.Models {
 			if (id_describeContents == IntPtr.Zero)
 				id_describeContents = JNIEnv.GetMethodID (class_ref, "describeContents", "()I");
 			try {
-				return JNIEnv.CallIntMethod  (Handle, id_describeContents);
+				return JNIEnv.CallIntMethod (((global::Java.Lang.Object) this).Handle, id_describeContents);
 			} finally {
 			}
 		}
@@ -161,7 +161,7 @@ namespace Com.Marketo.Inapp.Models {
 				JValue* __args = stackalloc JValue [2];
 				__args [0] = new JValue (p0);
 				__args [1] = new JValue ((int) p1);
-				JNIEnv.CallVoidMethod  (Handle, id_writeToParcel_Landroid_os_Parcel_I, __args);
+				JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_writeToParcel_Landroid_os_Parcel_I, __args);
 			} finally {
 			}
 		}

@@ -31,7 +31,7 @@ namespace Com.Marketo.Inapp.Views {
 		public unsafe CloseButton (global::Android.Content.Context p0, global::Android.Util.IAttributeSet p1, int p2)
 			: base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
 		{
-			if (Handle != IntPtr.Zero)
+			if (((global::Java.Lang.Object) this).Handle != IntPtr.Zero)
 				return;
 
 			try {
@@ -39,11 +39,11 @@ namespace Com.Marketo.Inapp.Views {
 				__args [0] = new JValue (p0);
 				__args [1] = new JValue (p1);
 				__args [2] = new JValue (p2);
-				if (GetType () != typeof (CloseButton)) {
+				if (((object) this).GetType () != typeof (CloseButton)) {
 					SetHandle (
-							global::Android.Runtime.JNIEnv.StartCreateInstance (GetType (), "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", __args),
+							global::Android.Runtime.JNIEnv.StartCreateInstance (((object) this).GetType (), "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", __args),
 							JniHandleOwnership.TransferLocalRef);
-					global::Android.Runtime.JNIEnv.FinishCreateInstance (Handle, "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", __args);
+					global::Android.Runtime.JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", __args);
 					return;
 				}
 
@@ -52,7 +52,7 @@ namespace Com.Marketo.Inapp.Views {
 				SetHandle (
 						global::Android.Runtime.JNIEnv.StartCreateInstance (class_ref, id_ctor_Landroid_content_Context_Landroid_util_AttributeSet_I, __args),
 						JniHandleOwnership.TransferLocalRef);
-				JNIEnv.FinishCreateInstance (Handle, class_ref, id_ctor_Landroid_content_Context_Landroid_util_AttributeSet_I, __args);
+				JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, class_ref, id_ctor_Landroid_content_Context_Landroid_util_AttributeSet_I, __args);
 			} finally {
 			}
 		}
@@ -63,18 +63,18 @@ namespace Com.Marketo.Inapp.Views {
 		public unsafe CloseButton (global::Android.Content.Context p0, global::Android.Util.IAttributeSet p1)
 			: base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
 		{
-			if (Handle != IntPtr.Zero)
+			if (((global::Java.Lang.Object) this).Handle != IntPtr.Zero)
 				return;
 
 			try {
 				JValue* __args = stackalloc JValue [2];
 				__args [0] = new JValue (p0);
 				__args [1] = new JValue (p1);
-				if (GetType () != typeof (CloseButton)) {
+				if (((object) this).GetType () != typeof (CloseButton)) {
 					SetHandle (
-							global::Android.Runtime.JNIEnv.StartCreateInstance (GetType (), "(Landroid/content/Context;Landroid/util/AttributeSet;)V", __args),
+							global::Android.Runtime.JNIEnv.StartCreateInstance (((object) this).GetType (), "(Landroid/content/Context;Landroid/util/AttributeSet;)V", __args),
 							JniHandleOwnership.TransferLocalRef);
-					global::Android.Runtime.JNIEnv.FinishCreateInstance (Handle, "(Landroid/content/Context;Landroid/util/AttributeSet;)V", __args);
+					global::Android.Runtime.JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, "(Landroid/content/Context;Landroid/util/AttributeSet;)V", __args);
 					return;
 				}
 
@@ -83,7 +83,7 @@ namespace Com.Marketo.Inapp.Views {
 				SetHandle (
 						global::Android.Runtime.JNIEnv.StartCreateInstance (class_ref, id_ctor_Landroid_content_Context_Landroid_util_AttributeSet_, __args),
 						JniHandleOwnership.TransferLocalRef);
-				JNIEnv.FinishCreateInstance (Handle, class_ref, id_ctor_Landroid_content_Context_Landroid_util_AttributeSet_, __args);
+				JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, class_ref, id_ctor_Landroid_content_Context_Landroid_util_AttributeSet_, __args);
 			} finally {
 			}
 		}
@@ -94,17 +94,17 @@ namespace Com.Marketo.Inapp.Views {
 		public unsafe CloseButton (global::Android.Content.Context p0)
 			: base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
 		{
-			if (Handle != IntPtr.Zero)
+			if (((global::Java.Lang.Object) this).Handle != IntPtr.Zero)
 				return;
 
 			try {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (p0);
-				if (GetType () != typeof (CloseButton)) {
+				if (((object) this).GetType () != typeof (CloseButton)) {
 					SetHandle (
-							global::Android.Runtime.JNIEnv.StartCreateInstance (GetType (), "(Landroid/content/Context;)V", __args),
+							global::Android.Runtime.JNIEnv.StartCreateInstance (((object) this).GetType (), "(Landroid/content/Context;)V", __args),
 							JniHandleOwnership.TransferLocalRef);
-					global::Android.Runtime.JNIEnv.FinishCreateInstance (Handle, "(Landroid/content/Context;)V", __args);
+					global::Android.Runtime.JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, "(Landroid/content/Context;)V", __args);
 					return;
 				}
 
@@ -113,23 +113,75 @@ namespace Com.Marketo.Inapp.Views {
 				SetHandle (
 						global::Android.Runtime.JNIEnv.StartCreateInstance (class_ref, id_ctor_Landroid_content_Context_, __args),
 						JniHandleOwnership.TransferLocalRef);
-				JNIEnv.FinishCreateInstance (Handle, class_ref, id_ctor_Landroid_content_Context_, __args);
+				JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, class_ref, id_ctor_Landroid_content_Context_, __args);
 			} finally {
 			}
 		}
 
-		static IntPtr id_a_I;
-		// Metadata.xml XPath method reference: path="/api/package[@name='com.marketo.inapp.views']/class[@name='CloseButton']/method[@name='a' and count(parameter)=1 and parameter[1][@type='int']]"
-		[Register ("a", "(I)V", "")]
-		public unsafe void A (int p0)
+		static Delegate cb_getTint;
+#pragma warning disable 0169
+		static Delegate GetGetTintHandler ()
 		{
-			if (id_a_I == IntPtr.Zero)
-				id_a_I = JNIEnv.GetMethodID (class_ref, "a", "(I)V");
-			try {
-				JValue* __args = stackalloc JValue [1];
-				__args [0] = new JValue (p0);
-				JNIEnv.CallVoidMethod  (Handle, id_a_I, __args);
-			} finally {
+			if (cb_getTint == null)
+				cb_getTint = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, int>) n_GetTint);
+			return cb_getTint;
+		}
+
+		static int n_GetTint (IntPtr jnienv, IntPtr native__this)
+		{
+			global::Com.Marketo.Inapp.Views.CloseButton __this = global::Java.Lang.Object.GetObject<global::Com.Marketo.Inapp.Views.CloseButton> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			return __this.Tint;
+		}
+#pragma warning restore 0169
+
+		static Delegate cb_setTint_I;
+#pragma warning disable 0169
+		static Delegate GetSetTint_IHandler ()
+		{
+			if (cb_setTint_I == null)
+				cb_setTint_I = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, int>) n_SetTint_I);
+			return cb_setTint_I;
+		}
+
+		static void n_SetTint_I (IntPtr jnienv, IntPtr native__this, int p0)
+		{
+			global::Com.Marketo.Inapp.Views.CloseButton __this = global::Java.Lang.Object.GetObject<global::Com.Marketo.Inapp.Views.CloseButton> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			__this.Tint = p0;
+		}
+#pragma warning restore 0169
+
+		static IntPtr id_getTint;
+		static IntPtr id_setTint_I;
+		public virtual unsafe int Tint {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.marketo.inapp.views']/class[@name='CloseButton']/method[@name='getTint' and count(parameter)=0]"
+			[Register ("getTint", "()I", "GetGetTintHandler")]
+			get {
+				if (id_getTint == IntPtr.Zero)
+					id_getTint = JNIEnv.GetMethodID (class_ref, "getTint", "()I");
+				try {
+
+					if (((object) this).GetType () == ThresholdType)
+						return JNIEnv.CallIntMethod (((global::Java.Lang.Object) this).Handle, id_getTint);
+					else
+						return JNIEnv.CallNonvirtualIntMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getTint", "()I"));
+				} finally {
+				}
+			}
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.marketo.inapp.views']/class[@name='CloseButton']/method[@name='setTint' and count(parameter)=1 and parameter[1][@type='int']]"
+			[Register ("setTint", "(I)V", "GetSetTint_IHandler")]
+			set {
+				if (id_setTint_I == IntPtr.Zero)
+					id_setTint_I = JNIEnv.GetMethodID (class_ref, "setTint", "(I)V");
+				try {
+					JValue* __args = stackalloc JValue [1];
+					__args [0] = new JValue (value);
+
+					if (((object) this).GetType () == ThresholdType)
+						JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_setTint_I, __args);
+					else
+						JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setTint", "(I)V"), __args);
+				} finally {
+				}
 			}
 		}
 

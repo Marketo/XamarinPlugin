@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/var/lib/jenkins/jobs/Android%20MME%20SDK/workspace/code/res/values-land/dimens.xml -->
+    <!-- From: file:/data1/jenkins/jobs/Android_MME_SDK/workspace/code/res/values-land/dimens.xml -->
     <eat-comment/>
     <item format="fraction" name="fullscreen_layout_width_percent" type="dimen">100%
   </item>

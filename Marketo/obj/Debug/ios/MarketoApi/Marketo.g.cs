@@ -17,8 +17,8 @@ using GLKit;
 using Metal;
 using MapKit;
 using ModelIO;
-using Security;
 using SceneKit;
+using Security;
 using AudioUnit;
 using CoreVideo;
 using CoreMedia;
@@ -110,17 +110,6 @@ namespace MarketoApi {
 			}
 		}
 		
-		[Export ("getDeviceId")]
-		[CompilerGenerated]
-		public virtual string getDeviceId ()
-		{
-			if (IsDirectBinding) {
-				return NSString.FromHandle (global::ApiDefinition.Messaging.IntPtr_objc_msgSend (this.Handle, Selector.GetHandle ("getDeviceId")));
-			} else {
-				return NSString.FromHandle (global::ApiDefinition.Messaging.IntPtr_objc_msgSendSuper (this.SuperHandle, Selector.GetHandle ("getDeviceId")));
-			}
-		}
-		
 		[Export ("handlePushNotification:")]
 		[CompilerGenerated]
 		public virtual void HandlePushNotification (NSDictionary userInfo)
@@ -168,17 +157,6 @@ namespace MarketoApi {
 			}
 		}
 		
-		[Export ("isSecureModeEnabled")]
-		[CompilerGenerated]
-		public virtual bool isSecureModeEnabled ()
-		{
-			if (IsDirectBinding) {
-				return global::ApiDefinition.Messaging.bool_objc_msgSend (this.Handle, Selector.GetHandle ("isSecureModeEnabled"));
-			} else {
-				return global::ApiDefinition.Messaging.bool_objc_msgSendSuper (this.SuperHandle, Selector.GetHandle ("isSecureModeEnabled"));
-			}
-		}
-		
 		[Export ("registerPushDeviceToken:")]
 		[CompilerGenerated]
 		public virtual void RegisterPushDeviceToken (NSData deviceToken)
@@ -222,6 +200,17 @@ namespace MarketoApi {
 			
 		}
 		
+		[Export ("reportAll")]
+		[CompilerGenerated]
+		public virtual void ReportAll ()
+		{
+			if (IsDirectBinding) {
+				global::ApiDefinition.Messaging.void_objc_msgSend (this.Handle, Selector.GetHandle ("reportAll"));
+			} else {
+				global::ApiDefinition.Messaging.void_objc_msgSendSuper (this.SuperHandle, Selector.GetHandle ("reportAll"));
+			}
+		}
+		
 		[Export ("setSecureSignature:")]
 		[CompilerGenerated]
 		public virtual void SetSecureSignature (MKTSecuritySignature conf)
@@ -246,13 +235,6 @@ namespace MarketoApi {
 			}
 		}
 		
-		[Export ("sharedInstance")]
-		[CompilerGenerated]
-		public static Marketo sharedInstance ()
-		{
-			return  Runtime.GetNSObject<Marketo> (global::ApiDefinition.Messaging.IntPtr_objc_msgSend (class_ptr, Selector.GetHandle ("sharedInstance")));
-		}
-		
 		[Export ("trackPushNotification:")]
 		[CompilerGenerated]
 		public virtual void TrackPushNotification (NSDictionary userInfo)
@@ -264,6 +246,46 @@ namespace MarketoApi {
 			} else {
 				global::ApiDefinition.Messaging.void_objc_msgSendSuper_IntPtr (this.SuperHandle, Selector.GetHandle ("trackPushNotification:"), userInfo.Handle);
 			}
+		}
+		
+		[Export ("unregisterPushDeviceToken")]
+		[CompilerGenerated]
+		public virtual void UnregisterPushDeviceToken ()
+		{
+			if (IsDirectBinding) {
+				global::ApiDefinition.Messaging.void_objc_msgSend (this.Handle, Selector.GetHandle ("unregisterPushDeviceToken"));
+			} else {
+				global::ApiDefinition.Messaging.void_objc_msgSendSuper (this.SuperHandle, Selector.GetHandle ("unregisterPushDeviceToken"));
+			}
+		}
+		
+		[Export ("getDeviceId")]
+		[CompilerGenerated]
+		public virtual string getDeviceId ()
+		{
+			if (IsDirectBinding) {
+				return NSString.FromHandle (global::ApiDefinition.Messaging.IntPtr_objc_msgSend (this.Handle, Selector.GetHandle ("getDeviceId")));
+			} else {
+				return NSString.FromHandle (global::ApiDefinition.Messaging.IntPtr_objc_msgSendSuper (this.SuperHandle, Selector.GetHandle ("getDeviceId")));
+			}
+		}
+		
+		[Export ("isSecureModeEnabled")]
+		[CompilerGenerated]
+		public virtual bool isSecureModeEnabled ()
+		{
+			if (IsDirectBinding) {
+				return global::ApiDefinition.Messaging.bool_objc_msgSend (this.Handle, Selector.GetHandle ("isSecureModeEnabled"));
+			} else {
+				return global::ApiDefinition.Messaging.bool_objc_msgSendSuper (this.SuperHandle, Selector.GetHandle ("isSecureModeEnabled"));
+			}
+		}
+		
+		[Export ("sharedInstance")]
+		[CompilerGenerated]
+		public static Marketo sharedInstance ()
+		{
+			return  Runtime.GetNSObject<Marketo> (global::ApiDefinition.Messaging.IntPtr_objc_msgSend (class_ptr, Selector.GetHandle ("sharedInstance")));
 		}
 		
 		[CompilerGenerated]
