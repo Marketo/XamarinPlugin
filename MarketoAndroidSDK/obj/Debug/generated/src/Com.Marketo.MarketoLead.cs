@@ -95,15 +95,15 @@ namespace Com.Marketo {
 		public unsafe MarketoLead ()
 			: base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
 		{
-			if (Handle != IntPtr.Zero)
+			if (((global::Java.Lang.Object) this).Handle != IntPtr.Zero)
 				return;
 
 			try {
-				if (GetType () != typeof (MarketoLead)) {
+				if (((object) this).GetType () != typeof (MarketoLead)) {
 					SetHandle (
-							global::Android.Runtime.JNIEnv.StartCreateInstance (GetType (), "()V"),
+							global::Android.Runtime.JNIEnv.StartCreateInstance (((object) this).GetType (), "()V"),
 							JniHandleOwnership.TransferLocalRef);
-					global::Android.Runtime.JNIEnv.FinishCreateInstance (Handle, "()V");
+					global::Android.Runtime.JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, "()V");
 					return;
 				}
 
@@ -112,7 +112,7 @@ namespace Com.Marketo {
 				SetHandle (
 						global::Android.Runtime.JNIEnv.StartCreateInstance (class_ref, id_ctor),
 						JniHandleOwnership.TransferLocalRef);
-				JNIEnv.FinishCreateInstance (Handle, class_ref, id_ctor);
+				JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, class_ref, id_ctor);
 			} finally {
 			}
 		}
@@ -146,10 +146,10 @@ namespace Com.Marketo {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (native_p0);
 
-				if (GetType () == ThresholdType)
-					JNIEnv.CallVoidMethod  (Handle, id_setAddress_Ljava_lang_String_, __args);
+				if (((object) this).GetType () == ThresholdType)
+					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_setAddress_Ljava_lang_String_, __args);
 				else
-					JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setAddress", "(Ljava/lang/String;)V"), __args);
+					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setAddress", "(Ljava/lang/String;)V"), __args);
 			} finally {
 				JNIEnv.DeleteLocalRef (native_p0);
 			}
@@ -184,10 +184,10 @@ namespace Com.Marketo {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (native_p0);
 
-				if (GetType () == ThresholdType)
-					JNIEnv.CallVoidMethod  (Handle, id_setBirthDay_Ljava_lang_String_, __args);
+				if (((object) this).GetType () == ThresholdType)
+					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_setBirthDay_Ljava_lang_String_, __args);
 				else
-					JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setBirthDay", "(Ljava/lang/String;)V"), __args);
+					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setBirthDay", "(Ljava/lang/String;)V"), __args);
 			} finally {
 				JNIEnv.DeleteLocalRef (native_p0);
 			}
@@ -222,10 +222,10 @@ namespace Com.Marketo {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (native_p0);
 
-				if (GetType () == ThresholdType)
-					JNIEnv.CallVoidMethod  (Handle, id_setCity_Ljava_lang_String_, __args);
+				if (((object) this).GetType () == ThresholdType)
+					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_setCity_Ljava_lang_String_, __args);
 				else
-					JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setCity", "(Ljava/lang/String;)V"), __args);
+					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setCity", "(Ljava/lang/String;)V"), __args);
 			} finally {
 				JNIEnv.DeleteLocalRef (native_p0);
 			}
@@ -260,10 +260,10 @@ namespace Com.Marketo {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (native_p0);
 
-				if (GetType () == ThresholdType)
-					JNIEnv.CallVoidMethod  (Handle, id_setCountry_Ljava_lang_String_, __args);
+				if (((object) this).GetType () == ThresholdType)
+					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_setCountry_Ljava_lang_String_, __args);
 				else
-					JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setCountry", "(Ljava/lang/String;)V"), __args);
+					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setCountry", "(Ljava/lang/String;)V"), __args);
 			} finally {
 				JNIEnv.DeleteLocalRef (native_p0);
 			}
@@ -301,10 +301,10 @@ namespace Com.Marketo {
 				__args [0] = new JValue (native_p0);
 				__args [1] = new JValue (native_p1);
 
-				if (GetType () == ThresholdType)
-					JNIEnv.CallVoidMethod  (Handle, id_setCustomField_Ljava_lang_String_Ljava_lang_String_, __args);
+				if (((object) this).GetType () == ThresholdType)
+					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_setCustomField_Ljava_lang_String_Ljava_lang_String_, __args);
 				else
-					JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setCustomField", "(Ljava/lang/String;Ljava/lang/String;)V"), __args);
+					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setCustomField", "(Ljava/lang/String;Ljava/lang/String;)V"), __args);
 			} finally {
 				JNIEnv.DeleteLocalRef (native_p0);
 				JNIEnv.DeleteLocalRef (native_p1);
@@ -340,10 +340,10 @@ namespace Com.Marketo {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (native_p0);
 
-				if (GetType () == ThresholdType)
-					JNIEnv.CallVoidMethod  (Handle, id_setEmail_Ljava_lang_String_, __args);
+				if (((object) this).GetType () == ThresholdType)
+					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_setEmail_Ljava_lang_String_, __args);
 				else
-					JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setEmail", "(Ljava/lang/String;)V"), __args);
+					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setEmail", "(Ljava/lang/String;)V"), __args);
 			} finally {
 				JNIEnv.DeleteLocalRef (native_p0);
 			}
@@ -378,10 +378,10 @@ namespace Com.Marketo {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (native_p0);
 
-				if (GetType () == ThresholdType)
-					JNIEnv.CallVoidMethod  (Handle, id_setFacebookId_Ljava_lang_String_, __args);
+				if (((object) this).GetType () == ThresholdType)
+					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_setFacebookId_Ljava_lang_String_, __args);
 				else
-					JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setFacebookId", "(Ljava/lang/String;)V"), __args);
+					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setFacebookId", "(Ljava/lang/String;)V"), __args);
 			} finally {
 				JNIEnv.DeleteLocalRef (native_p0);
 			}
@@ -416,10 +416,10 @@ namespace Com.Marketo {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (native_p0);
 
-				if (GetType () == ThresholdType)
-					JNIEnv.CallVoidMethod  (Handle, id_setFacebookProfilePicURL_Ljava_lang_String_, __args);
+				if (((object) this).GetType () == ThresholdType)
+					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_setFacebookProfilePicURL_Ljava_lang_String_, __args);
 				else
-					JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setFacebookProfilePicURL", "(Ljava/lang/String;)V"), __args);
+					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setFacebookProfilePicURL", "(Ljava/lang/String;)V"), __args);
 			} finally {
 				JNIEnv.DeleteLocalRef (native_p0);
 			}
@@ -454,10 +454,10 @@ namespace Com.Marketo {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (native_p0);
 
-				if (GetType () == ThresholdType)
-					JNIEnv.CallVoidMethod  (Handle, id_setFacebookProfileURL_Ljava_lang_String_, __args);
+				if (((object) this).GetType () == ThresholdType)
+					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_setFacebookProfileURL_Ljava_lang_String_, __args);
 				else
-					JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setFacebookProfileURL", "(Ljava/lang/String;)V"), __args);
+					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setFacebookProfileURL", "(Ljava/lang/String;)V"), __args);
 			} finally {
 				JNIEnv.DeleteLocalRef (native_p0);
 			}
@@ -492,10 +492,10 @@ namespace Com.Marketo {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (native_p0);
 
-				if (GetType () == ThresholdType)
-					JNIEnv.CallVoidMethod  (Handle, id_setFirstName_Ljava_lang_String_, __args);
+				if (((object) this).GetType () == ThresholdType)
+					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_setFirstName_Ljava_lang_String_, __args);
 				else
-					JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setFirstName", "(Ljava/lang/String;)V"), __args);
+					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setFirstName", "(Ljava/lang/String;)V"), __args);
 			} finally {
 				JNIEnv.DeleteLocalRef (native_p0);
 			}
@@ -530,10 +530,10 @@ namespace Com.Marketo {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (native_p0);
 
-				if (GetType () == ThresholdType)
-					JNIEnv.CallVoidMethod  (Handle, id_setGender_Ljava_lang_String_, __args);
+				if (((object) this).GetType () == ThresholdType)
+					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_setGender_Ljava_lang_String_, __args);
 				else
-					JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setGender", "(Ljava/lang/String;)V"), __args);
+					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setGender", "(Ljava/lang/String;)V"), __args);
 			} finally {
 				JNIEnv.DeleteLocalRef (native_p0);
 			}
@@ -568,10 +568,10 @@ namespace Com.Marketo {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (native_p0);
 
-				if (GetType () == ThresholdType)
-					JNIEnv.CallVoidMethod  (Handle, id_setLastName_Ljava_lang_String_, __args);
+				if (((object) this).GetType () == ThresholdType)
+					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_setLastName_Ljava_lang_String_, __args);
 				else
-					JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setLastName", "(Ljava/lang/String;)V"), __args);
+					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setLastName", "(Ljava/lang/String;)V"), __args);
 			} finally {
 				JNIEnv.DeleteLocalRef (native_p0);
 			}
@@ -606,10 +606,10 @@ namespace Com.Marketo {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (native_p0);
 
-				if (GetType () == ThresholdType)
-					JNIEnv.CallVoidMethod  (Handle, id_setLeadSource_Ljava_lang_String_, __args);
+				if (((object) this).GetType () == ThresholdType)
+					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_setLeadSource_Ljava_lang_String_, __args);
 				else
-					JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setLeadSource", "(Ljava/lang/String;)V"), __args);
+					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setLeadSource", "(Ljava/lang/String;)V"), __args);
 			} finally {
 				JNIEnv.DeleteLocalRef (native_p0);
 			}
@@ -644,10 +644,10 @@ namespace Com.Marketo {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (native_p0);
 
-				if (GetType () == ThresholdType)
-					JNIEnv.CallVoidMethod  (Handle, id_setLinkedinId_Ljava_lang_String_, __args);
+				if (((object) this).GetType () == ThresholdType)
+					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_setLinkedinId_Ljava_lang_String_, __args);
 				else
-					JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setLinkedinId", "(Ljava/lang/String;)V"), __args);
+					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setLinkedinId", "(Ljava/lang/String;)V"), __args);
 			} finally {
 				JNIEnv.DeleteLocalRef (native_p0);
 			}
@@ -682,10 +682,10 @@ namespace Com.Marketo {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (native_p0);
 
-				if (GetType () == ThresholdType)
-					JNIEnv.CallVoidMethod  (Handle, id_setPostalCode_Ljava_lang_String_, __args);
+				if (((object) this).GetType () == ThresholdType)
+					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_setPostalCode_Ljava_lang_String_, __args);
 				else
-					JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setPostalCode", "(Ljava/lang/String;)V"), __args);
+					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setPostalCode", "(Ljava/lang/String;)V"), __args);
 			} finally {
 				JNIEnv.DeleteLocalRef (native_p0);
 			}
@@ -720,10 +720,10 @@ namespace Com.Marketo {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (native_p0);
 
-				if (GetType () == ThresholdType)
-					JNIEnv.CallVoidMethod  (Handle, id_setState_Ljava_lang_String_, __args);
+				if (((object) this).GetType () == ThresholdType)
+					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_setState_Ljava_lang_String_, __args);
 				else
-					JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setState", "(Ljava/lang/String;)V"), __args);
+					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setState", "(Ljava/lang/String;)V"), __args);
 			} finally {
 				JNIEnv.DeleteLocalRef (native_p0);
 			}
@@ -758,10 +758,10 @@ namespace Com.Marketo {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (native_p0);
 
-				if (GetType () == ThresholdType)
-					JNIEnv.CallVoidMethod  (Handle, id_setTwitterId_Ljava_lang_String_, __args);
+				if (((object) this).GetType () == ThresholdType)
+					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_setTwitterId_Ljava_lang_String_, __args);
 				else
-					JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setTwitterId", "(Ljava/lang/String;)V"), __args);
+					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setTwitterId", "(Ljava/lang/String;)V"), __args);
 			} finally {
 				JNIEnv.DeleteLocalRef (native_p0);
 			}

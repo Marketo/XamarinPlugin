@@ -8,27 +8,25 @@ void xamarin_register_modules_impl ()
 
 void xamarin_register_assemblies_impl ()
 {
-	xamarin_open_and_register ("Xamarin.iOS.dll");
-	xamarin_open_and_register ("Marketo.dll");
+	guint32 exception_gchandle = 0;
+	xamarin_open_and_register ("Marketo.dll", &exception_gchandle);
+	xamarin_process_managed_exception_gchandle (exception_gchandle);
 
 }
 
 void xamarin_create_classes_Xamarin_iOS();
 void xamarin_setup_impl ()
 {
-	xamarin_use_old_dynamic_registrar = FALSE;
 	xamarin_create_classes_Xamarin_iOS();
 	xamarin_gc_pump = TRUE;
 	xamarin_init_mono_debug = TRUE;
-	xamarin_compact_seq_points = FALSE;
 	xamarin_executable_name = "TestMarketo.exe";
-	xamarin_use_new_assemblies = 1;
 	mono_use_llvm = FALSE;
 	xamarin_log_level = 2;
-	xamarin_use_sgen = TRUE;
 	xamarin_arch_name = "i386";
+	xamarin_marshal_objectivec_exception_mode = MarshalObjectiveCExceptionModeUnwindManagedCode;
 	xamarin_debug_mode = TRUE;
-	setenv ("MONO_GC_PARAMS", "nursery-size=512k", 1);
+	setenv ("MONO_GC_PARAMS", "nursery-size=512k,major=marksweep", 1);
 }
 
 int main (int argc, char **argv)

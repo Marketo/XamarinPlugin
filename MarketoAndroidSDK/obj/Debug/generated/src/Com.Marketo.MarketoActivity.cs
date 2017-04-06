@@ -31,15 +31,15 @@ namespace Com.Marketo {
 		public unsafe MarketoActivity ()
 			: base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
 		{
-			if (Handle != IntPtr.Zero)
+			if (((global::Java.Lang.Object) this).Handle != IntPtr.Zero)
 				return;
 
 			try {
-				if (GetType () != typeof (MarketoActivity)) {
+				if (((object) this).GetType () != typeof (MarketoActivity)) {
 					SetHandle (
-							global::Android.Runtime.JNIEnv.StartCreateInstance (GetType (), "()V"),
+							global::Android.Runtime.JNIEnv.StartCreateInstance (((object) this).GetType (), "()V"),
 							JniHandleOwnership.TransferLocalRef);
-					global::Android.Runtime.JNIEnv.FinishCreateInstance (Handle, "()V");
+					global::Android.Runtime.JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, "()V");
 					return;
 				}
 
@@ -48,7 +48,46 @@ namespace Com.Marketo {
 				SetHandle (
 						global::Android.Runtime.JNIEnv.StartCreateInstance (class_ref, id_ctor),
 						JniHandleOwnership.TransferLocalRef);
-				JNIEnv.FinishCreateInstance (Handle, class_ref, id_ctor);
+				JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, class_ref, id_ctor);
+			} finally {
+			}
+		}
+
+		static Delegate cb_a_Landroid_os_Bundle_;
+#pragma warning disable 0169
+		static Delegate GetA_Landroid_os_Bundle_Handler ()
+		{
+			if (cb_a_Landroid_os_Bundle_ == null)
+				cb_a_Landroid_os_Bundle_ = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, IntPtr, IntPtr>) n_A_Landroid_os_Bundle_);
+			return cb_a_Landroid_os_Bundle_;
+		}
+
+		static IntPtr n_A_Landroid_os_Bundle_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
+		{
+			global::Com.Marketo.MarketoActivity __this = global::Java.Lang.Object.GetObject<global::Com.Marketo.MarketoActivity> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::Android.OS.Bundle p0 = global::Java.Lang.Object.GetObject<global::Android.OS.Bundle> (native_p0, JniHandleOwnership.DoNotTransfer);
+			IntPtr __ret = JNIEnv.NewString (__this.A (p0));
+			return __ret;
+		}
+#pragma warning restore 0169
+
+		static IntPtr id_a_Landroid_os_Bundle_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.marketo']/class[@name='MarketoActivity']/method[@name='a' and count(parameter)=1 and parameter[1][@type='android.os.Bundle']]"
+		[Register ("a", "(Landroid/os/Bundle;)Ljava/lang/String;", "GetA_Landroid_os_Bundle_Handler")]
+		public virtual unsafe string A (global::Android.OS.Bundle p0)
+		{
+			if (id_a_Landroid_os_Bundle_ == IntPtr.Zero)
+				id_a_Landroid_os_Bundle_ = JNIEnv.GetMethodID (class_ref, "a", "(Landroid/os/Bundle;)Ljava/lang/String;");
+			try {
+				JValue* __args = stackalloc JValue [1];
+				__args [0] = new JValue (p0);
+
+				string __ret;
+				if (((object) this).GetType () == ThresholdType)
+					__ret = JNIEnv.GetString (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_a_Landroid_os_Bundle_, __args), JniHandleOwnership.TransferLocalRef);
+				else
+					__ret = JNIEnv.GetString (JNIEnv.CallNonvirtualObjectMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "a", "(Landroid/os/Bundle;)Ljava/lang/String;"), __args), JniHandleOwnership.TransferLocalRef);
+				return __ret;
 			} finally {
 			}
 		}
