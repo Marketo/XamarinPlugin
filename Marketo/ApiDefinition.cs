@@ -57,6 +57,9 @@ namespace MarketoApi
 		[Export("registerPushDeviceToken:")]
 		void RegisterPushDeviceToken(NSData deviceToken);
 
+		[Export ("unregisterPushDeviceToken")]
+		void UnregisterPushDeviceToken ();
+
 		[Export("trackPushNotification:")]
 		void TrackPushNotification(NSDictionary userInfo);
 
@@ -83,6 +86,9 @@ namespace MarketoApi
 
 		[Export("getDeviceId")]
 		string getDeviceId();
+
+		[Export ("reportAll")]
+		void ReportAll ();
 	}
 
 	[BaseType(typeof(NSObject))]

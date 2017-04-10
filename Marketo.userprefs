@@ -1,9 +1,11 @@
-﻿<Properties StartupItem="MarketoIosSample/MarketoIosSample.csproj">
+﻿<Properties StartupConfiguration="{5CA33EB3-E7D1-4BC8-8527-2398AA30000A}|Default">
   <MonoDevelop.Ide.Workbench />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <Breakpoint file="/Users/rohit/Projects/Marketo/Marketo/obj/Debug/ios/InfColorPicker/Marketo.g.cs" line="101" column="1" />
-    <Breakpoint file="/Users/rohit/Projects/Marketo/TestMarketoAndroid/MainActivity.cs" line="17" column="1" />
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MarketoAndroidSDK PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MonoDevelop.Ide.ItemProperties.MarketoIosSample PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.AA2E6CB1-7CF3-4286-B94E-DD7B0EB316D0" />
+  <MultiItemStartupConfigurations />
 </Properties>

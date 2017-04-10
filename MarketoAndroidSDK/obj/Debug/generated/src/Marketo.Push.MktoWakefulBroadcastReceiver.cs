@@ -31,15 +31,15 @@ namespace Marketo.Push {
 		public unsafe MktoWakefulBroadcastReceiver ()
 			: base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
 		{
-			if (Handle != IntPtr.Zero)
+			if (((global::Java.Lang.Object) this).Handle != IntPtr.Zero)
 				return;
 
 			try {
-				if (GetType () != typeof (MktoWakefulBroadcastReceiver)) {
+				if (((object) this).GetType () != typeof (MktoWakefulBroadcastReceiver)) {
 					SetHandle (
-							global::Android.Runtime.JNIEnv.StartCreateInstance (GetType (), "()V"),
+							global::Android.Runtime.JNIEnv.StartCreateInstance (((object) this).GetType (), "()V"),
 							JniHandleOwnership.TransferLocalRef);
-					global::Android.Runtime.JNIEnv.FinishCreateInstance (Handle, "()V");
+					global::Android.Runtime.JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, "()V");
 					return;
 				}
 
@@ -48,7 +48,7 @@ namespace Marketo.Push {
 				SetHandle (
 						global::Android.Runtime.JNIEnv.StartCreateInstance (class_ref, id_ctor),
 						JniHandleOwnership.TransferLocalRef);
-				JNIEnv.FinishCreateInstance (Handle, class_ref, id_ctor);
+				JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, class_ref, id_ctor);
 			} finally {
 			}
 		}
@@ -98,7 +98,6 @@ namespace Marketo.Push {
 		}
 
 		static IntPtr id_onReceive_Landroid_content_Context_Landroid_content_Intent_;
-		// Metadata.xml XPath method reference: path="/api/package[@name='android.content']/class[@name='BroadcastReceiver']/method[@name='onReceive' and count(parameter)=2 and parameter[1][@type='Android.Content.Context'] and parameter[2][@type='Android.Content.Intent']]"
 		[Register ("onReceive", "(Landroid/content/Context;Landroid/content/Intent;)V", "GetOnReceive_Landroid_content_Context_Landroid_content_Intent_Handler")]
 		public override unsafe void OnReceive (global::Android.Content.Context context, global::Android.Content.Intent intent)
 		{
@@ -108,7 +107,7 @@ namespace Marketo.Push {
 				JValue* __args = stackalloc JValue [2];
 				__args [0] = new JValue (context);
 				__args [1] = new JValue (intent);
-				JNIEnv.CallVoidMethod  (Handle, id_onReceive_Landroid_content_Context_Landroid_content_Intent_, __args);
+				JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onReceive_Landroid_content_Context_Landroid_content_Intent_, __args);
 			} finally {
 			}
 		}

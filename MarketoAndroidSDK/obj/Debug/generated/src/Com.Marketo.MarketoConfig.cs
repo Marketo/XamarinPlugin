@@ -6,7 +6,7 @@ namespace Com.Marketo {
 
 	// Metadata.xml XPath class reference: path="/api/package[@name='com.marketo']/class[@name='MarketoConfig']"
 	[global::Android.Runtime.Register ("com/marketo/MarketoConfig", DoNotGenerateAcw=true)]
-	public sealed partial class MarketoConfig : global::Java.Lang.Object {
+	public partial class MarketoConfig : global::Java.Lang.Object {
 
 		// Metadata.xml XPath class reference: path="/api/package[@name='com.marketo']/class[@name='MarketoConfig.Notification']"
 		[global::Android.Runtime.Register ("com/marketo/MarketoConfig$Notification", DoNotGenerateAcw=true)]
@@ -35,15 +35,15 @@ namespace Com.Marketo {
 			public unsafe Notification ()
 				: base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
 			{
-				if (Handle != IntPtr.Zero)
+				if (((global::Java.Lang.Object) this).Handle != IntPtr.Zero)
 					return;
 
 				try {
-					if (GetType () != typeof (Notification)) {
+					if (((object) this).GetType () != typeof (Notification)) {
 						SetHandle (
-								global::Android.Runtime.JNIEnv.StartCreateInstance (GetType (), "()V"),
+								global::Android.Runtime.JNIEnv.StartCreateInstance (((object) this).GetType (), "()V"),
 								JniHandleOwnership.TransferLocalRef);
-						global::Android.Runtime.JNIEnv.FinishCreateInstance (Handle, "()V");
+						global::Android.Runtime.JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, "()V");
 						return;
 					}
 
@@ -52,7 +52,7 @@ namespace Com.Marketo {
 					SetHandle (
 							global::Android.Runtime.JNIEnv.StartCreateInstance (class_ref, id_ctor),
 							JniHandleOwnership.TransferLocalRef);
-					JNIEnv.FinishCreateInstance (Handle, class_ref, id_ctor);
+					JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, class_ref, id_ctor);
 				} finally {
 				}
 			}
@@ -100,10 +100,10 @@ namespace Com.Marketo {
 						id_getNotificationLargeIcon = JNIEnv.GetMethodID (class_ref, "getNotificationLargeIcon", "()Landroid/graphics/Bitmap;");
 					try {
 
-						if (GetType () == ThresholdType)
-							return global::Java.Lang.Object.GetObject<global::Android.Graphics.Bitmap> (JNIEnv.CallObjectMethod  (Handle, id_getNotificationLargeIcon), JniHandleOwnership.TransferLocalRef);
+						if (((object) this).GetType () == ThresholdType)
+							return global::Java.Lang.Object.GetObject<global::Android.Graphics.Bitmap> (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_getNotificationLargeIcon), JniHandleOwnership.TransferLocalRef);
 						else
-							return global::Java.Lang.Object.GetObject<global::Android.Graphics.Bitmap> (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getNotificationLargeIcon", "()Landroid/graphics/Bitmap;")), JniHandleOwnership.TransferLocalRef);
+							return global::Java.Lang.Object.GetObject<global::Android.Graphics.Bitmap> (JNIEnv.CallNonvirtualObjectMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getNotificationLargeIcon", "()Landroid/graphics/Bitmap;")), JniHandleOwnership.TransferLocalRef);
 					} finally {
 					}
 				}
@@ -116,10 +116,10 @@ namespace Com.Marketo {
 						JValue* __args = stackalloc JValue [1];
 						__args [0] = new JValue (value);
 
-						if (GetType () == ThresholdType)
-							JNIEnv.CallVoidMethod  (Handle, id_setNotificationLargeIcon_Landroid_graphics_Bitmap_, __args);
+						if (((object) this).GetType () == ThresholdType)
+							JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_setNotificationLargeIcon_Landroid_graphics_Bitmap_, __args);
 						else
-							JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setNotificationLargeIcon", "(Landroid/graphics/Bitmap;)V"), __args);
+							JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setNotificationLargeIcon", "(Landroid/graphics/Bitmap;)V"), __args);
 					} finally {
 					}
 				}
@@ -167,10 +167,10 @@ namespace Com.Marketo {
 						id_getNotificationSmallIcon = JNIEnv.GetMethodID (class_ref, "getNotificationSmallIcon", "()I");
 					try {
 
-						if (GetType () == ThresholdType)
-							return JNIEnv.CallIntMethod  (Handle, id_getNotificationSmallIcon);
+						if (((object) this).GetType () == ThresholdType)
+							return JNIEnv.CallIntMethod (((global::Java.Lang.Object) this).Handle, id_getNotificationSmallIcon);
 						else
-							return JNIEnv.CallNonvirtualIntMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getNotificationSmallIcon", "()I"));
+							return JNIEnv.CallNonvirtualIntMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getNotificationSmallIcon", "()I"));
 					} finally {
 					}
 				}
@@ -183,10 +183,10 @@ namespace Com.Marketo {
 						JValue* __args = stackalloc JValue [1];
 						__args [0] = new JValue (value);
 
-						if (GetType () == ThresholdType)
-							JNIEnv.CallVoidMethod  (Handle, id_setNotificationSmallIcon_I, __args);
+						if (((object) this).GetType () == ThresholdType)
+							JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_setNotificationSmallIcon_I, __args);
 						else
-							JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setNotificationSmallIcon", "(I)V"), __args);
+							JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setNotificationSmallIcon", "(I)V"), __args);
 					} finally {
 					}
 				}
@@ -221,15 +221,15 @@ namespace Com.Marketo {
 			public unsafe SecureMode ()
 				: base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
 			{
-				if (Handle != IntPtr.Zero)
+				if (((global::Java.Lang.Object) this).Handle != IntPtr.Zero)
 					return;
 
 				try {
-					if (GetType () != typeof (SecureMode)) {
+					if (((object) this).GetType () != typeof (SecureMode)) {
 						SetHandle (
-								global::Android.Runtime.JNIEnv.StartCreateInstance (GetType (), "()V"),
+								global::Android.Runtime.JNIEnv.StartCreateInstance (((object) this).GetType (), "()V"),
 								JniHandleOwnership.TransferLocalRef);
-						global::Android.Runtime.JNIEnv.FinishCreateInstance (Handle, "()V");
+						global::Android.Runtime.JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, "()V");
 						return;
 					}
 
@@ -238,7 +238,7 @@ namespace Com.Marketo {
 					SetHandle (
 							global::Android.Runtime.JNIEnv.StartCreateInstance (class_ref, id_ctor),
 							JniHandleOwnership.TransferLocalRef);
-					JNIEnv.FinishCreateInstance (Handle, class_ref, id_ctor);
+					JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, class_ref, id_ctor);
 				} finally {
 				}
 			}
@@ -286,10 +286,10 @@ namespace Com.Marketo {
 						id_getAccessKey = JNIEnv.GetMethodID (class_ref, "getAccessKey", "()Ljava/lang/String;");
 					try {
 
-						if (GetType () == ThresholdType)
-							return JNIEnv.GetString (JNIEnv.CallObjectMethod  (Handle, id_getAccessKey), JniHandleOwnership.TransferLocalRef);
+						if (((object) this).GetType () == ThresholdType)
+							return JNIEnv.GetString (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_getAccessKey), JniHandleOwnership.TransferLocalRef);
 						else
-							return JNIEnv.GetString (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getAccessKey", "()Ljava/lang/String;")), JniHandleOwnership.TransferLocalRef);
+							return JNIEnv.GetString (JNIEnv.CallNonvirtualObjectMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getAccessKey", "()Ljava/lang/String;")), JniHandleOwnership.TransferLocalRef);
 					} finally {
 					}
 				}
@@ -303,10 +303,10 @@ namespace Com.Marketo {
 						JValue* __args = stackalloc JValue [1];
 						__args [0] = new JValue (native_value);
 
-						if (GetType () == ThresholdType)
-							JNIEnv.CallVoidMethod  (Handle, id_setAccessKey_Ljava_lang_String_, __args);
+						if (((object) this).GetType () == ThresholdType)
+							JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_setAccessKey_Ljava_lang_String_, __args);
 						else
-							JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setAccessKey", "(Ljava/lang/String;)V"), __args);
+							JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setAccessKey", "(Ljava/lang/String;)V"), __args);
 					} finally {
 						JNIEnv.DeleteLocalRef (native_value);
 					}
@@ -356,10 +356,10 @@ namespace Com.Marketo {
 						id_getEmail = JNIEnv.GetMethodID (class_ref, "getEmail", "()Ljava/lang/String;");
 					try {
 
-						if (GetType () == ThresholdType)
-							return JNIEnv.GetString (JNIEnv.CallObjectMethod  (Handle, id_getEmail), JniHandleOwnership.TransferLocalRef);
+						if (((object) this).GetType () == ThresholdType)
+							return JNIEnv.GetString (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_getEmail), JniHandleOwnership.TransferLocalRef);
 						else
-							return JNIEnv.GetString (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getEmail", "()Ljava/lang/String;")), JniHandleOwnership.TransferLocalRef);
+							return JNIEnv.GetString (JNIEnv.CallNonvirtualObjectMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getEmail", "()Ljava/lang/String;")), JniHandleOwnership.TransferLocalRef);
 					} finally {
 					}
 				}
@@ -373,10 +373,10 @@ namespace Com.Marketo {
 						JValue* __args = stackalloc JValue [1];
 						__args [0] = new JValue (native_value);
 
-						if (GetType () == ThresholdType)
-							JNIEnv.CallVoidMethod  (Handle, id_setEmail_Ljava_lang_String_, __args);
+						if (((object) this).GetType () == ThresholdType)
+							JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_setEmail_Ljava_lang_String_, __args);
 						else
-							JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setEmail", "(Ljava/lang/String;)V"), __args);
+							JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setEmail", "(Ljava/lang/String;)V"), __args);
 					} finally {
 						JNIEnv.DeleteLocalRef (native_value);
 					}
@@ -408,10 +408,10 @@ namespace Com.Marketo {
 						id_isValid = JNIEnv.GetMethodID (class_ref, "isValid", "()Z");
 					try {
 
-						if (GetType () == ThresholdType)
-							return JNIEnv.CallBooleanMethod  (Handle, id_isValid);
+						if (((object) this).GetType () == ThresholdType)
+							return JNIEnv.CallBooleanMethod (((global::Java.Lang.Object) this).Handle, id_isValid);
 						else
-							return JNIEnv.CallNonvirtualBooleanMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "isValid", "()Z"));
+							return JNIEnv.CallNonvirtualBooleanMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "isValid", "()Z"));
 					} finally {
 					}
 				}
@@ -460,10 +460,10 @@ namespace Com.Marketo {
 						id_getSignature = JNIEnv.GetMethodID (class_ref, "getSignature", "()Ljava/lang/String;");
 					try {
 
-						if (GetType () == ThresholdType)
-							return JNIEnv.GetString (JNIEnv.CallObjectMethod  (Handle, id_getSignature), JniHandleOwnership.TransferLocalRef);
+						if (((object) this).GetType () == ThresholdType)
+							return JNIEnv.GetString (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_getSignature), JniHandleOwnership.TransferLocalRef);
 						else
-							return JNIEnv.GetString (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getSignature", "()Ljava/lang/String;")), JniHandleOwnership.TransferLocalRef);
+							return JNIEnv.GetString (JNIEnv.CallNonvirtualObjectMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getSignature", "()Ljava/lang/String;")), JniHandleOwnership.TransferLocalRef);
 					} finally {
 					}
 				}
@@ -477,10 +477,10 @@ namespace Com.Marketo {
 						JValue* __args = stackalloc JValue [1];
 						__args [0] = new JValue (native_value);
 
-						if (GetType () == ThresholdType)
-							JNIEnv.CallVoidMethod  (Handle, id_setSignature_Ljava_lang_String_, __args);
+						if (((object) this).GetType () == ThresholdType)
+							JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_setSignature_Ljava_lang_String_, __args);
 						else
-							JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setSignature", "(Ljava/lang/String;)V"), __args);
+							JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setSignature", "(Ljava/lang/String;)V"), __args);
 					} finally {
 						JNIEnv.DeleteLocalRef (native_value);
 					}
@@ -529,10 +529,10 @@ namespace Com.Marketo {
 						id_getTimestamp = JNIEnv.GetMethodID (class_ref, "getTimestamp", "()J");
 					try {
 
-						if (GetType () == ThresholdType)
-							return JNIEnv.CallLongMethod  (Handle, id_getTimestamp);
+						if (((object) this).GetType () == ThresholdType)
+							return JNIEnv.CallLongMethod (((global::Java.Lang.Object) this).Handle, id_getTimestamp);
 						else
-							return JNIEnv.CallNonvirtualLongMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getTimestamp", "()J"));
+							return JNIEnv.CallNonvirtualLongMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getTimestamp", "()J"));
 					} finally {
 					}
 				}
@@ -545,10 +545,10 @@ namespace Com.Marketo {
 						JValue* __args = stackalloc JValue [1];
 						__args [0] = new JValue (value);
 
-						if (GetType () == ThresholdType)
-							JNIEnv.CallVoidMethod  (Handle, id_setTimestamp_J, __args);
+						if (((object) this).GetType () == ThresholdType)
+							JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_setTimestamp_J, __args);
 						else
-							JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setTimestamp", "(J)V"), __args);
+							JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setTimestamp", "(J)V"), __args);
 					} finally {
 					}
 				}
@@ -556,7 +556,7 @@ namespace Com.Marketo {
 
 		}
 
-		internal MarketoConfig (IntPtr javaReference, JniHandleOwnership transfer) : base (javaReference, transfer) {}
+		protected MarketoConfig (IntPtr javaReference, JniHandleOwnership transfer) : base (javaReference, transfer) {}
 
 	}
 }

@@ -11,11 +11,11 @@ namespace Com.Marketo {
 
 		// Metadata.xml XPath field reference: path="/api/package[@name='com.marketo']/class[@name='Marketo']/field[@name='SDK_VERSION']"
 		[Register ("SDK_VERSION")]
-		public const string SdkVersion = (string) "MarketoSDK 0.6.3";
+		public const string SdkVersion = (string) "MarketoSDK 0.7.4";
 
 		// Metadata.xml XPath field reference: path="/api/package[@name='com.marketo']/class[@name='Marketo']/field[@name='SDK_VERSION_CODE']"
 		[Register ("SDK_VERSION_CODE")]
-		public const string SdkVersionCode = (string) "0.6.3";
+		public const string SdkVersionCode = (string) "0.7.4";
 
 		// Metadata.xml XPath field reference: path="/api/package[@name='com.marketo']/class[@name='Marketo']/field[@name='SDK_VERSION_INT']"
 		[Register ("SDK_VERSION_INT")]
@@ -45,7 +45,7 @@ namespace Com.Marketo {
 				if (id_getCurrentActivity == IntPtr.Zero)
 					id_getCurrentActivity = JNIEnv.GetMethodID (class_ref, "getCurrentActivity", "()Landroid/app/Activity;");
 				try {
-					return global::Java.Lang.Object.GetObject<global::Android.App.Activity> (JNIEnv.CallObjectMethod  (Handle, id_getCurrentActivity), JniHandleOwnership.TransferLocalRef);
+					return global::Java.Lang.Object.GetObject<global::Android.App.Activity> (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_getCurrentActivity), JniHandleOwnership.TransferLocalRef);
 				} finally {
 				}
 			}
@@ -59,7 +59,7 @@ namespace Com.Marketo {
 				if (id_getDeviceId == IntPtr.Zero)
 					id_getDeviceId = JNIEnv.GetMethodID (class_ref, "getDeviceId", "()Ljava/lang/String;");
 				try {
-					return JNIEnv.GetString (JNIEnv.CallObjectMethod  (Handle, id_getDeviceId), JniHandleOwnership.TransferLocalRef);
+					return JNIEnv.GetString (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_getDeviceId), JniHandleOwnership.TransferLocalRef);
 				} finally {
 				}
 			}
@@ -143,7 +143,7 @@ namespace Com.Marketo {
 				if (id_getNotificationConfig == IntPtr.Zero)
 					id_getNotificationConfig = JNIEnv.GetMethodID (class_ref, "getNotificationConfig", "()Lcom/marketo/MarketoConfig$Notification;");
 				try {
-					return global::Java.Lang.Object.GetObject<global::Com.Marketo.MarketoConfig.Notification> (JNIEnv.CallObjectMethod  (Handle, id_getNotificationConfig), JniHandleOwnership.TransferLocalRef);
+					return global::Java.Lang.Object.GetObject<global::Com.Marketo.MarketoConfig.Notification> (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_getNotificationConfig), JniHandleOwnership.TransferLocalRef);
 				} finally {
 				}
 			}
@@ -155,8 +155,37 @@ namespace Com.Marketo {
 				try {
 					JValue* __args = stackalloc JValue [1];
 					__args [0] = new JValue (value);
-					JNIEnv.CallVoidMethod  (Handle, id_setNotificationConfig_Lcom_marketo_MarketoConfig_Notification_, __args);
+					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_setNotificationConfig_Lcom_marketo_MarketoConfig_Notification_, __args);
 				} finally {
+				}
+			}
+		}
+
+		static IntPtr id_getTriggerableInAppMessages;
+		static IntPtr id_setTriggerableInAppMessages_Ljava_util_HashMap_;
+		public unsafe global::System.Collections.Generic.IDictionary<string, global::Com.Marketo.Inapp.Models.InAppMessage> TriggerableInAppMessages {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.marketo']/class[@name='Marketo']/method[@name='getTriggerableInAppMessages' and count(parameter)=0]"
+			[Register ("getTriggerableInAppMessages", "()Ljava/util/HashMap;", "GetGetTriggerableInAppMessagesHandler")]
+			get {
+				if (id_getTriggerableInAppMessages == IntPtr.Zero)
+					id_getTriggerableInAppMessages = JNIEnv.GetMethodID (class_ref, "getTriggerableInAppMessages", "()Ljava/util/HashMap;");
+				try {
+					return global::Android.Runtime.JavaDictionary<string, global::Com.Marketo.Inapp.Models.InAppMessage>.FromJniHandle (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_getTriggerableInAppMessages), JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.marketo']/class[@name='Marketo']/method[@name='setTriggerableInAppMessages' and count(parameter)=1 and parameter[1][@type='java.util.HashMap&lt;java.lang.String, com.marketo.inapp.models.InAppMessage&gt;']]"
+			[Register ("setTriggerableInAppMessages", "(Ljava/util/HashMap;)V", "GetSetTriggerableInAppMessages_Ljava_util_HashMap_Handler")]
+			set {
+				if (id_setTriggerableInAppMessages_Ljava_util_HashMap_ == IntPtr.Zero)
+					id_setTriggerableInAppMessages_Ljava_util_HashMap_ = JNIEnv.GetMethodID (class_ref, "setTriggerableInAppMessages", "(Ljava/util/HashMap;)V");
+				IntPtr native_value = global::Android.Runtime.JavaDictionary<string, global::Com.Marketo.Inapp.Models.InAppMessage>.ToLocalJniHandle (value);
+				try {
+					JValue* __args = stackalloc JValue [1];
+					__args [0] = new JValue (native_value);
+					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_setTriggerableInAppMessages_Ljava_util_HashMap_, __args);
+				} finally {
+					JNIEnv.DeleteLocalRef (native_value);
 				}
 			}
 		}
@@ -171,7 +200,7 @@ namespace Com.Marketo {
 			try {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (p0);
-				JNIEnv.CallVoidMethod  (Handle, id_associateLead_Lcom_marketo_MarketoLead_, __args);
+				JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_associateLead_Lcom_marketo_MarketoLead_, __args);
 			} finally {
 			}
 		}
@@ -184,7 +213,7 @@ namespace Com.Marketo {
 			if (id_cleanMarketoAppSecret == IntPtr.Zero)
 				id_cleanMarketoAppSecret = JNIEnv.GetMethodID (class_ref, "cleanMarketoAppSecret", "()V");
 			try {
-				JNIEnv.CallVoidMethod  (Handle, id_cleanMarketoAppSecret);
+				JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_cleanMarketoAppSecret);
 			} finally {
 			}
 		}
@@ -203,7 +232,7 @@ namespace Com.Marketo {
 				__args [0] = new JValue (p0);
 				__args [1] = new JValue (native_p1);
 				__args [2] = new JValue (native_p2);
-				JNIEnv.CallVoidMethod  (Handle, id_getInAppMessagesForDevice_ZLjava_lang_String_Ljava_lang_String_, __args);
+				JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_getInAppMessagesForDevice_ZLjava_lang_String_Ljava_lang_String_, __args);
 			} finally {
 				JNIEnv.DeleteLocalRef (native_p1);
 				JNIEnv.DeleteLocalRef (native_p2);
@@ -237,7 +266,7 @@ namespace Com.Marketo {
 			try {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (native_p0);
-				JNIEnv.CallVoidMethod  (Handle, id_initializeMarketoPush_Ljava_lang_String_, __args);
+				JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_initializeMarketoPush_Ljava_lang_String_, __args);
 			} finally {
 				JNIEnv.DeleteLocalRef (native_p0);
 			}
@@ -256,7 +285,7 @@ namespace Com.Marketo {
 				JValue* __args = stackalloc JValue [2];
 				__args [0] = new JValue (native_p0);
 				__args [1] = new JValue (native_p1);
-				JNIEnv.CallVoidMethod  (Handle, id_initializeSDK_Ljava_lang_String_Ljava_lang_String_, __args);
+				JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_initializeSDK_Ljava_lang_String_Ljava_lang_String_, __args);
 			} finally {
 				JNIEnv.DeleteLocalRef (native_p0);
 				JNIEnv.DeleteLocalRef (native_p1);
@@ -301,7 +330,7 @@ namespace Com.Marketo {
 			if (id_removeSecureSignature == IntPtr.Zero)
 				id_removeSecureSignature = JNIEnv.GetMethodID (class_ref, "removeSecureSignature", "()V");
 			try {
-				JNIEnv.CallVoidMethod  (Handle, id_removeSecureSignature);
+				JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_removeSecureSignature);
 			} finally {
 			}
 		}
@@ -324,6 +353,19 @@ namespace Com.Marketo {
 			}
 		}
 
+		static IntPtr id_reportAll;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.marketo']/class[@name='Marketo']/method[@name='reportAll' and count(parameter)=0]"
+		[Register ("reportAll", "()V", "")]
+		public static unsafe void ReportAll ()
+		{
+			if (id_reportAll == IntPtr.Zero)
+				id_reportAll = JNIEnv.GetStaticMethodID (class_ref, "reportAll", "()V");
+			try {
+				JNIEnv.CallStaticVoidMethod  (class_ref, id_reportAll);
+			} finally {
+			}
+		}
+
 		static IntPtr id_setPhonegapCurrentActivity_Landroid_app_Activity_;
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.marketo']/class[@name='Marketo']/method[@name='setPhonegapCurrentActivity' and count(parameter)=1 and parameter[1][@type='android.app.Activity']]"
 		[Register ("setPhonegapCurrentActivity", "(Landroid/app/Activity;)V", "")]
@@ -334,7 +376,7 @@ namespace Com.Marketo {
 			try {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (p0);
-				JNIEnv.CallVoidMethod  (Handle, id_setPhonegapCurrentActivity_Landroid_app_Activity_, __args);
+				JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_setPhonegapCurrentActivity_Landroid_app_Activity_, __args);
 			} finally {
 			}
 		}
@@ -349,7 +391,20 @@ namespace Com.Marketo {
 			try {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (p0);
-				JNIEnv.CallVoidMethod  (Handle, id_setSecureSignature_Lcom_marketo_MarketoConfig_SecureMode_, __args);
+				JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_setSecureSignature_Lcom_marketo_MarketoConfig_SecureMode_, __args);
+			} finally {
+			}
+		}
+
+		static IntPtr id_uninitializeMarketoPush;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.marketo']/class[@name='Marketo']/method[@name='uninitializeMarketoPush' and count(parameter)=0]"
+		[Register ("uninitializeMarketoPush", "()V", "")]
+		public unsafe void UninitializeMarketoPush ()
+		{
+			if (id_uninitializeMarketoPush == IntPtr.Zero)
+				id_uninitializeMarketoPush = JNIEnv.GetMethodID (class_ref, "uninitializeMarketoPush", "()V");
+			try {
+				JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_uninitializeMarketoPush);
 			} finally {
 			}
 		}
