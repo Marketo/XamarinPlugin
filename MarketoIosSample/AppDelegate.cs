@@ -30,6 +30,27 @@ namespace TestMarketo
 			 
 			m.AssociateLead(lead);
 
+			// Register for push notifications
+			if (UIDevice.CurrentDevice.CheckSystemVersion (8, 0)) {
+			   var pushSettings = UIUserNotificationSettings.GetSettingsForTypes(
+				UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound,
+					new NSSet());
+					
+				UIApplication.SharedApplication.RegisterUserNotificationSettings (pushSettings);
+				UIApplication.SharedApplication.RegisterForRemoteNotifications ();
+			} else {
+				UIRemoteNotificationType notificationTypes = 
+					UIRemoteNotificationType.Alert | UIRemoteNotificationType.Badge | UIRemoteNotificationType.Sound;
+				UIApplication.SharedApplication.RegisterForRemoteNotificationTypes (notificationTypes);
+			}
+
+			MarketoActionMetaData data = new MarketoActionMetaData();
+			data.SetType("OnStart");
+			data.SetDetails("FristOpenOrForceClosed");
+			data.SetLength(1);
+			data.SetMetric(2);
+			m.ReportAction("Xamarin Event", data);
+
 
 			return true;
 		}
