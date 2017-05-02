@@ -22,7 +22,7 @@ namespace TestMarketo
 			// Override point for customization after application launch.
 			// If not required for your application you can safely delete this method
 			Marketo m = Marketo.sharedInstance();
-			m.InitializeWithMunchkinID("MUNC", "UnAwSXhja216b1Z5Z0EzbEZKMnNXR08x", new NSDictionary());
+			m.InitializeWithMunchkinID("MUNC", "UnAwSXhja216b1Z5Z0EzbEZKMnNXR08x", launchOptions);
 
 			MarketoLead lead = new MarketoLead();
 			lead.SetEmail("xamarin@gmail.com");
