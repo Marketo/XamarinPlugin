@@ -1,6 +1,7 @@
 ﻿using Foundation;
 using UIKit;
 using MarketoApi;
+using UserNotifications;
 
 namespace TestMarketo
 {
@@ -31,18 +32,28 @@ namespace TestMarketo
 			m.AssociateLead(lead);
 
 			// Register for push notifications
-			if (UIDevice.CurrentDevice.CheckSystemVersion (8, 0)) {
-			   var pushSettings = UIUserNotificationSettings.GetSettingsForTypes(
-				UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound,
-					new NSSet());
-					
-				UIApplication.SharedApplication.RegisterUserNotificationSettings (pushSettings);
-				UIApplication.SharedApplication.RegisterForRemoteNotifications ();
-			} else {
-				UIRemoteNotificationType notificationTypes = 
-					UIRemoteNotificationType.Alert | UIRemoteNotificationType.Badge | UIRemoteNotificationType.Sound;
-				UIApplication.SharedApplication.RegisterForRemoteNotificationTypes (notificationTypes);
-			}
+			if (UIDevice.CurrentDevice.CheckSystemVersion(8, 0))
+            {
+                var pushSettings = UIUserNotificationSettings.GetSettingsForTypes(
+								   UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound,
+								   new NSSet());
+UIApplication.SharedApplication.RegisterUserNotificationSettings(pushSettings);
+                UIApplication.SharedApplication.RegisterForRemoteNotifications();
+            }
+            else
+            {
+                UNUserNotificationCenter.Current.RequestAuthorization(UNAuthorizationOptions.Alert | UNAuthorizationOptions.Badge | UNAuthorizationOptions.Sound, (approved, err) =>
+                {
+                    if (!approved)
+                    {
+                        System.Console.WriteLine("Permission Deninded");
+                    }
+                });
+                UNUserNotificationCenter.Current.Delegate = new MyUNUserNotificationCenterDelegate();
+UIRemoteNotificationType notificationTypes = UIRemoteNotificationType.Alert | UIRemoteNotificationType.Badge | UIRemoteNotificationType.Sound;
+UIApplication.SharedApplication.RegisterForRemoteNotificationTypes(notificationTypes);
+
+            }
 
 			MarketoActionMetaData data = new MarketoActionMetaData();
 			data.SetType("OnStart");
@@ -88,7 +99,6 @@ namespace TestMarketo
 
 		public override void DidReceiveRemoteNotification(UIApplication application, NSDictionary userInfo, System.Action<UIBackgroundFetchResult> completionHandler)
 		{
-			base.DidReceiveRemoteNotification(application, userInfo, completionHandler);
 			Marketo.sharedInstance().HandlePushNotification(userInfo);
 		}
 
@@ -101,7 +111,6 @@ namespace TestMarketo
 
 		public override void RegisteredForRemoteNotifications(UIApplication application, NSData deviceToken)
 		{
-			//base.RegisteredForRemoteNotifications(application, deviceToken);
 			Marketo.sharedInstance().RegisterPushDeviceToken(deviceToken);
 		}
 
