@@ -23,37 +23,32 @@ namespace TestMarketo
 			// Override point for customization after application launch.
 			// If not required for your application you can safely delete this method
 			Marketo m = Marketo.sharedInstance();
-			m.InitializeWithMunchkinID("MUNC", "UnAwSXhja216b1Z5Z0EzbEZKMnNXR08x", launchOptions);
+			NSDictionary d = (launchOptions == null) ? new NSDictionary() : launchOptions;
+			m.InitializeWithMunchkinID("MUNC", "UnAwSXhja216b1Z5Z0EzbEZKMnNXR08x", d);
 
 			MarketoLead lead = new MarketoLead();
 			lead.SetEmail("xamarin@gmail.com");
-
-			 
+			Z
 			m.AssociateLead(lead);
 
 			// Register for push notifications
-			if (UIDevice.CurrentDevice.CheckSystemVersion(8, 0))
-            {
-                var pushSettings = UIUserNotificationSettings.GetSettingsForTypes(
-								   UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound,
-								   new NSSet());
-UIApplication.SharedApplication.RegisterUserNotificationSettings(pushSettings);
-                UIApplication.SharedApplication.RegisterForRemoteNotifications();
-            }
-            else
-            {
-                UNUserNotificationCenter.Current.RequestAuthorization(UNAuthorizationOptions.Alert | UNAuthorizationOptions.Badge | UNAuthorizationOptions.Sound, (approved, err) =>
-                {
-                    if (!approved)
-                    {
-                        System.Console.WriteLine("Permission Deninded");
-                    }
-                });
-                UNUserNotificationCenter.Current.Delegate = new MyUNUserNotificationCenterDelegate();
-UIRemoteNotificationType notificationTypes = UIRemoteNotificationType.Alert | UIRemoteNotificationType.Badge | UIRemoteNotificationType.Sound;
-UIApplication.SharedApplication.RegisterForRemoteNotificationTypes(notificationTypes);
+			if (UIDevice.CurrentDevice.CheckSystemVersion(10, 0))
+			{
+				UNUserNotificationCenter.Current.RequestAuthorization(UNAuthorizationOptions.Alert | UNAuthorizationOptions.Badge | UNAuthorizationOptions.Sound, (approved, err) =>
+				{
+					if (!approved)
+					{
+						System.Console.WriteLine("Permission Deninded");
+					}
+				});
+				UNUserNotificationCenter.Current.Delegate = new MyUNUserNotificationCenterDelegate();
 
-            }
+			}
+			var pushSettings = UIUserNotificationSettings.GetSettingsForTypes(
+				UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound,
+				new NSSet());
+			UIApplication.SharedApplication.RegisterUserNotificationSettings(pushSettings);
+			UIApplication.SharedApplication.RegisterForRemoteNotifications();
 
 			MarketoActionMetaData data = new MarketoActionMetaData();
 			data.SetType("OnStart");
@@ -61,7 +56,6 @@ UIApplication.SharedApplication.RegisterForRemoteNotificationTypes(notificationT
 			data.SetLength(1);
 			data.SetMetric(2);
 			m.ReportAction("Xamarin Event", data);
-
 
 			return true;
 		}
@@ -106,7 +100,6 @@ UIApplication.SharedApplication.RegisterForRemoteNotificationTypes(notificationT
 		{
 			Marketo.sharedInstance().Application(application, url, sourceApplication, annotation);
 			return base.OpenUrl(application, url, sourceApplication, annotation);
-
 		}
 
 		public override void RegisteredForRemoteNotifications(UIApplication application, NSData deviceToken)
@@ -116,7 +109,6 @@ UIApplication.SharedApplication.RegisterForRemoteNotificationTypes(notificationT
 
 		public override void ReceivedLocalNotification(UIApplication application, UILocalNotification notification)
 		{
-			base.ReceivedLocalNotification(application, notification);
 			Marketo.sharedInstance().Application(application,notification);
 		}
 
