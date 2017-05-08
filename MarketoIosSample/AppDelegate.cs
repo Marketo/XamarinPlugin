@@ -28,7 +28,7 @@ namespace TestMarketo
 
 			MarketoLead lead = new MarketoLead();
 			lead.SetEmail("xamarin@gmail.com");
-			Z
+
 			m.AssociateLead(lead);
 
 			// Register for push notifications
