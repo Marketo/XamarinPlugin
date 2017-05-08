@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using UserNotifications;
 using MarketoApi;
 
@@ -30,6 +30,7 @@ namespace TestMarketo
 			//res.SetValueForKey(new NSString("checked"), new NSString("checked"));
 			Marketo.sharedInstance().UserNotificationCenter(center, response, completionHandler);
 
-		}	
+		}
 	}
 }
+
