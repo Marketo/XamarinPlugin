@@ -5,6 +5,7 @@ using ObjCRuntime;
 using Foundation;
 using UIKit;
 using CoreGraphics;
+using UserNotifications;
 
 namespace MarketoApi
 {
@@ -74,6 +75,9 @@ namespace MarketoApi
 
 		[Export("application:didReceiveLocalNotification:")]
 		void Application(UIApplication application, UILocalNotification notification);
+
+		[Export("userNotificationCenter: didReceiveNotificationResponse:withCompletionHandler:")]
+		void UserNotificationCenter(UNUserNotificationCenter center, UNNotificationResponse response, Action completionHandler);
 
 		[Export("setSecureSignature:")]
 		void SetSecureSignature(MKTSecuritySignature conf);

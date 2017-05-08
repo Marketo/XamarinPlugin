@@ -101,7 +101,7 @@ namespace TestMarketo
 
 		public override void RegisteredForRemoteNotifications(UIApplication application, NSData deviceToken)
 		{
-			base.RegisteredForRemoteNotifications(application, deviceToken);
+			//base.RegisteredForRemoteNotifications(application, deviceToken);
 			Marketo.sharedInstance().RegisterPushDeviceToken(deviceToken);
 		}
 
