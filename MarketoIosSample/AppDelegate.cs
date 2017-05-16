@@ -32,23 +32,26 @@ namespace TestMarketo
 			m.AssociateLead(lead);
 
 			// Register for push notifications
-			if (UIDevice.CurrentDevice.CheckSystemVersion(10, 0))
-			{
-				UNUserNotificationCenter.Current.RequestAuthorization(UNAuthorizationOptions.Alert | UNAuthorizationOptions.Badge | UNAuthorizationOptions.Sound, (approved, err) =>
-				{
-					if (!approved)
-					{
-						System.Console.WriteLine("Permission Deninded");
-					}
-				});
-				UNUserNotificationCenter.Current.Delegate = new MyUNUserNotificationCenterDelegate();
-
+			if (UIDevice.CurrentDevice.CheckSystemVersion(10, 0)) {
+				Type type = typeof(UNUserNotificationCenter);
+				IntPtr classHandle = Class.GetHandle(type);
+				if (classHandle != IntPtr.Zero) {
+					var options = UNAuthorizationOptions.Alert | UNAuthorizationOptions.Sound | UNAuthorizationOptions.Badge;
+					UNUserNotificationCenter.Current.RequestAuthorization(options, (approved, error) => {
+						if (error != null) {
+							System.Console.WriteLine("Permission Deninded");
+						}
+					});
+				}
+			} else if (application.RespondsToSelector(new Selector("registerUserNotificationSettings:"))) {
+				var notificationTypes = UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound;
+				var settings = UIUserNotificationSettings.GetSettingsForTypes(notificationTypes, null);
+				application.RegisterUserNotificationSettings(settings);
+			} else {
+				var notificationTypes = UIRemoteNotificationType.Alert | UIRemoteNotificationType.Badge | UIRemoteNotificationType.Sound;
+				application.RegisterForRemoteNotificationTypes(notificationTypes);
 			}
-			var pushSettings = UIUserNotificationSettings.GetSettingsForTypes(
-				UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound,
-				new NSSet());
-			UIApplication.SharedApplication.RegisterUserNotificationSettings(pushSettings);
-			UIApplication.SharedApplication.RegisterForRemoteNotifications();
+			application.RegisterForRemoteNotifications();
 
 			MarketoActionMetaData data = new MarketoActionMetaData();
 			data.SetType("OnStart");
