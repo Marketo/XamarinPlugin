@@ -259,6 +259,31 @@ namespace MarketoApi {
 			}
 		}
 		
+		[Export ("userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:")]
+		[CompilerGenerated]
+		public unsafe virtual void UserNotificationCenter (global::UserNotifications.UNUserNotificationCenter center, global::UserNotifications.UNNotificationResponse response, [BlockProxy (typeof (ObjCRuntime.Trampolines.NIDAction))]global::System.Action completionHandler)
+		{
+			if (center == null)
+				throw new ArgumentNullException ("center");
+			if (response == null)
+				throw new ArgumentNullException ("response");
+			if (completionHandler == null)
+				throw new ArgumentNullException ("completionHandler");
+			BlockLiteral *block_ptr_completionHandler;
+			BlockLiteral block_completionHandler;
+			block_completionHandler = new BlockLiteral ();
+			block_ptr_completionHandler = &block_completionHandler;
+			block_completionHandler.SetupBlock (Trampolines.SDAction.Handler, completionHandler);
+			
+			if (IsDirectBinding) {
+				global::ApiDefinition.Messaging.void_objc_msgSend_IntPtr_IntPtr_IntPtr (this.Handle, Selector.GetHandle ("userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:"), center.Handle, response.Handle, (IntPtr) block_ptr_completionHandler);
+			} else {
+				global::ApiDefinition.Messaging.void_objc_msgSendSuper_IntPtr_IntPtr_IntPtr (this.SuperHandle, Selector.GetHandle ("userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:"), center.Handle, response.Handle, (IntPtr) block_ptr_completionHandler);
+			}
+			block_ptr_completionHandler->CleanupBlock ();
+			
+		}
+		
 		[Export ("getDeviceId")]
 		[CompilerGenerated]
 		public virtual string getDeviceId ()

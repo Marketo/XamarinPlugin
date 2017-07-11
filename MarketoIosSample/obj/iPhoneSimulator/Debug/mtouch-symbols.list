@@ -321,8 +321,8 @@ _xamarin_get_block_descriptor
 _xamarin_timezone_get_names
 _xamarin_timezone_get_data
 _xamarin_GetFolderPath
-_xamarin_get_locale_country_code
 _xamarin_log
+_xamarin_get_locale_country_code
 _CreateZStream
 _CloseZStream
 _Flush

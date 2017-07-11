@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Sdk>
-  <AndroidApiLevel>23</AndroidApiLevel>
-  <AndroidApiLevelName>23</AndroidApiLevelName>
-  <AndroidNdkPath>/Users/manishpande/Library/Developer/Xamarin/android-ndk/android-ndk-r12-beta1</AndroidNdkPath>
-  <AndroidSdkBuildToolsPath>/Users/manishpande/Documents/Software/Xamarin/build-tools/23.0.2</AndroidSdkBuildToolsPath>
-  <AndroidSdkBuildToolsBinPath>/Users/manishpande/Documents/Software/Xamarin/build-tools/23.0.2</AndroidSdkBuildToolsBinPath>
-  <AndroidSdkPath>/Users/manishpande/Documents/Software/Xamarin</AndroidSdkPath>
+  <AndroidApiLevel>26</AndroidApiLevel>
+  <AndroidApiLevelName>26</AndroidApiLevelName>
+  <AndroidNdkPath />
+  <AndroidSdkBuildToolsPath>/Users/manishpande/Documents/Software/AndroidSDK/build-tools/26.0.0-rc1</AndroidSdkBuildToolsPath>
+  <AndroidSdkBuildToolsBinPath>/Users/manishpande/Documents/Software/AndroidSDK/build-tools/26.0.0-rc1</AndroidSdkBuildToolsBinPath>
+  <AndroidSdkPath>/Users/manishpande/Documents/Software/AndroidSDK</AndroidSdkPath>
   <JavaSdkPath>/usr</JavaSdkPath>
   <MonoAndroidBinPath>/Library/Frameworks/Xamarin.Android.framework/Versions/Current/bin</MonoAndroidBinPath>
   <MonoAndroidToolsPath>/Library/Frameworks/Xamarin.Android.framework/Versions/Current/lib/mandroid</MonoAndroidToolsPath>
   <ReferenceAssemblyPaths>
     <ReferenceAssemblyPath>/Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/</ReferenceAssemblyPath>
   </ReferenceAssemblyPaths>
-  <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
-  <ZipAlignPath>/Users/manishpande/Documents/Software/Xamarin/build-tools/23.0.2</ZipAlignPath>
+  <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+  <ZipAlignPath>/Users/manishpande/Documents/Software/AndroidSDK/build-tools/26.0.0-rc1</ZipAlignPath>
   <MonoAndroidIncludePath />
-  <SupportedApiLevel>23</SupportedApiLevel>
+  <SupportedApiLevel>25</SupportedApiLevel>
   <AndroidSequencePointsMode>None</AndroidSequencePointsMode>
 </Sdk>
