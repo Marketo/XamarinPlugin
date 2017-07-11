@@ -28,7 +28,7 @@ namespace TestMarketo
 			// If not required for your application you can safely delete this method
 			Marketo m = Marketo.sharedInstance();
 			NSDictionary d = (launchOptions == null) ? new NSDictionary() : launchOptions;
-			m.InitializeWithMunchkinID("MUNC", "UnAwSXhja216b1Z5Z0EzbEZKMnNXR08x", d);
+			m.InitializeWithMunchkinID("352-XEU-842","UnAwSXhja216b1Z5Z0EzbEZKMnNXR08x", null);
 
 			MarketoLead lead = new MarketoLead();
 			lead.SetEmail("xamarin@gmail.com");
