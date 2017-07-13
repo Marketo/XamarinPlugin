@@ -2,13 +2,13 @@
 <Paths>
   <Jars></Jars>
   <ResolvedResourceDirectories>
-    <ResolvedResourceDirectory>/Users/rohit/Projects/Marketo/MarketoAndroidSample/obj/Debug/__library_projects__/MarketoAndroiSDK/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/manishpande/Documents/Vessel/XamarinPlugin/MarketoAndroidSample/obj/Debug/__library_projects__/MarketoAndroiSDK/library_project_imports/res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
-    <ResolvedAssetDirectory>/Users/rohit/Projects/Marketo/MarketoAndroidSample/obj/Debug/__library_projects__/MarketoAndroiSDK/library_project_imports/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Debug/__library_projects__/MarketoAndroiSDK/library_project_imports/assets</ResolvedAssetDirectory>
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
-    <ResolvedResourceDirectoryStamp>/Users/rohit/Projects/Marketo/MarketoAndroidSample/obj/Debug/__library_projects__/MarketoAndroiSDK.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/manishpande/Documents/Vessel/XamarinPlugin/MarketoAndroidSample/obj/Debug/__library_projects__/MarketoAndroiSDK.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

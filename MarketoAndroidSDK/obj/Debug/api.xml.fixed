@@ -1,0 +1,1893 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<api>
+  <package name="com.marketo">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="Marketo" static="false" visibility="public">
+      <method abstract="false" deprecated="not deprecated" final="false" name="associateLead" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="com.marketo.MarketoLead">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="cleanMarketoAppSecret" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCurrentActivity" native="false" return="android.app.Activity" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getDeviceId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getInAppMessagesForDevice" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="boolean">
+        </parameter>
+        <parameter name="p1" type="java.lang.String">
+        </parameter>
+        <parameter name="p2" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="com.marketo.Marketo" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getNetworkTimeout" native="false" return="int" static="true" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getNotificationConfig" native="false" return="com.marketo.MarketoConfig.Notification" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getTriggerableInAppMessages" native="false" return="java.util.HashMap&lt;java.lang.String, com.marketo.inapp.models.InAppMessage&gt;" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="initializeMarketoPush" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="initializeSDK" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+        <parameter name="p1" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isPushRegistered" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isSDKInitalized" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isSecureModeEnabled" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onStart" native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.app.Activity">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onStop" native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.app.Activity">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="removeSecureSignature" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="reportAction" native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+        <parameter name="p1" type="com.marketo.MarketoActionMetaData">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="reportAll" native="false" return="void" static="true" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setNetworkTimeout" native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="int">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setNotificationConfig" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="com.marketo.MarketoConfig.Notification">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setPhonegapCurrentActivity" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.app.Activity">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setSecureSignature" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="com.marketo.MarketoConfig.SecureMode">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setTriggerableInAppMessages" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.util.HashMap&lt;java.lang.String, com.marketo.inapp.models.InAppMessage&gt;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="uninitializeMarketoPush" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="updateInAppList" native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+      </method>
+      <field deprecated="not deprecated" final="true" name="SDK_VERSION" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;MarketoSDK 0.7.4&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="SDK_VERSION_CODE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;0.7.4&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="SDK_VERSION_INT" static="true" transient="false" type="int" type-generic-aware="int" value="6" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Marketo.1" obfuscated="true" static="false" visibility="">
+      <implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Marketo.2" obfuscated="true" static="false" visibility="">
+      <implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Marketo.3" obfuscated="true" static="false" visibility="">
+      <implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Marketo.4" obfuscated="true" static="false" visibility="">
+      <implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Marketo.5" obfuscated="true" static="false" visibility="">
+      <implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Marketo.6" obfuscated="true" static="false" visibility="">
+      <implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="org.json.JSONObject" extends-generic-aware="org.json.JSONObject" final="false" name="MarketoActionMetaData" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="MarketoActionMetaData" static="false" type="com.marketo.MarketoActionMetaData" visibility="public">
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setActionDetails" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setActionLength" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setActionMetric" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setActionType" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <field deprecated="not deprecated" final="true" name="KEY_ACTION_DETAILS" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;Action Details&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="KEY_ACTION_LENGTH" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;Action Length&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="KEY_ACTION_METRIC" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;Action Metric&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="KEY_ACTION_TYPE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;Action Type&quot;" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="android.app.Activity" extends-generic-aware="android.app.Activity" final="false" name="MarketoActivity" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="MarketoActivity" static="false" type="com.marketo.MarketoActivity" visibility="public">
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.os.Bundle">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MarketoActivity.1" obfuscated="true" static="false" visibility="">
+      <implements name="android.content.DialogInterface.OnClickListener" name-generic-aware="android.content.DialogInterface.OnClickListener">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.DialogInterface">
+        </parameter>
+        <parameter name="p1" type="int">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MarketoActivity.2" obfuscated="true" static="false" visibility="">
+      <implements name="android.content.DialogInterface.OnShowListener" name-generic-aware="android.content.DialogInterface.OnShowListener">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onShow" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.DialogInterface">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MarketoActivity.2.1" obfuscated="true" static="false" visibility="">
+      <implements name="android.view.View.OnClickListener" name-generic-aware="android.view.View.OnClickListener">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.view.View">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MarketoActivity.3" obfuscated="true" static="false" visibility="">
+      <implements name="android.content.DialogInterface.OnClickListener" name-generic-aware="android.content.DialogInterface.OnClickListener">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.DialogInterface">
+        </parameter>
+        <parameter name="p1" type="int">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="android.os.AsyncTask" extends-generic-aware="android.os.AsyncTask&lt;java.lang.String, java.lang.String, java.lang.String&gt;" final="false" name="MarketoActivity.a" obfuscated="true" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="MarketoActivity.a" static="false" type="com.marketo.MarketoActivity.a" visibility="public">
+        <parameter name="p1" type="com.marketo.MarketoActivity">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.lang.String" static="false" synchronized="false" visibility="protected">
+        <parameter name="p0" type="java.lang.String...">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="marketo.push.MktoWakefulBroadcastReceiver" extends-generic-aware="marketo.push.MktoWakefulBroadcastReceiver" final="false" name="MarketoBroadcastReceiver" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="MarketoBroadcastReceiver" static="false" type="com.marketo.MarketoBroadcastReceiver" visibility="public">
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onReceive" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="android.content.Intent">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MarketoConfig" static="false" visibility="public" />
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MarketoConfig.Notification" static="true" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="MarketoConfig.Notification" static="false" type="com.marketo.MarketoConfig.Notification" visibility="public">
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getNotificationLargeIcon" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getNotificationSmallIcon" native="false" return="int" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setNotificationLargeIcon" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.graphics.Bitmap">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setNotificationSmallIcon" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MarketoConfig.SecureMode" static="true" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="MarketoConfig.SecureMode" static="false" type="com.marketo.MarketoConfig.SecureMode" visibility="public">
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getAccessKey" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getEmail" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getSignature" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getTimestamp" native="false" return="long" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isValid" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setAccessKey" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setEmail" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setSignature" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setTimestamp" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="long">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="android.app.IntentService" extends-generic-aware="android.app.IntentService" final="false" name="MarketoIntentService" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="MarketoIntentService" static="false" type="com.marketo.MarketoIntentService" visibility="public">
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onHandleIntent" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="p0" type="android.content.Intent">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="org.json.JSONObject" extends-generic-aware="org.json.JSONObject" final="false" name="MarketoLead" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="MarketoLead" static="false" type="com.marketo.MarketoLead" visibility="public">
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setAddress" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setBirthDay" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setCity" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setCountry" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setCustomField" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+        <parameter name="p1" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setEmail" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+        <exception name="MktoException" type="com.marketo.errors.MktoException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setFacebookId" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setFacebookProfilePicURL" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setFacebookProfileURL" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setFirstName" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setGender" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setLastName" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setLeadSource" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setLinkedinId" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setPostalCode" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setState" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setTwitterId" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <field deprecated="not deprecated" final="true" name="KEY_ADDRESS" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;address&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="KEY_BIRTHDAY" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;dateOfBirth&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="KEY_CITY" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;city&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="KEY_COUNTRY" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;country&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="KEY_EMAIL" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;email&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="KEY_FACEBOOK" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;facebookId&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="KEY_FACEBOOK_PROFILE_PIC" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;facebookPhotoURL&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="KEY_FACEBOOK_PROFILE_URL" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;facebookProfileURL&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="KEY_FIRST_NAME" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;firstName&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="KEY_GENDER" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;gender&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="KEY_LAST_NAME" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;lastName&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="KEY_LEAD_SOURCE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;leadSource&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="KEY_LINKEDIN" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;linkedinId&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="KEY_POSTAL_CODE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;postalCode&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="KEY_STATE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;state&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="KEY_TWITTER" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;twitterId&quot;" visibility="public" volatile="false">
+      </field>
+    </class>
+  </package>
+  <package name="com.marketo.ab">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="a" obfuscated="true" static="false" visibility="public">
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="com.marketo.ab.a" static="true" synchronized="true" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="true" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+        <parameter name="p1" type="java.lang.String">
+        </parameter>
+        <parameter name="p2" type="java.lang.String">
+        </parameter>
+        <parameter name="p3" type="java.lang.String">
+        </parameter>
+        <parameter name="p4" type="java.lang.String">
+        </parameter>
+        <parameter name="p5" type="int">
+        </parameter>
+        <parameter name="p6" type="int">
+        </parameter>
+        <parameter name="p7" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="true" visibility="public">
+        <parameter name="p0" type="java.lang.String[]">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="com.marketo.inapp.models.InAppMessage" static="false" synchronized="true" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="java.util.HashMap&lt;java.lang.String, com.marketo.inapp.models.InAppMessage&gt;" static="false" synchronized="true" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="void" static="false" synchronized="true" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="com.marketo.ab.b" static="false" synchronized="true" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="void" static="false" synchronized="true" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="e" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="e" native="false" return="void" static="false" synchronized="true" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="f" native="false" return="void" static="false" synchronized="true" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="android.database.sqlite.SQLiteOpenHelper" extends-generic-aware="android.database.sqlite.SQLiteOpenHelper" final="false" name="a.a" obfuscated="true" static="true" visibility="">
+      <method abstract="false" deprecated="not deprecated" final="false" name="onCreate" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.database.sqlite.SQLiteDatabase">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onUpgrade" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.database.sqlite.SQLiteDatabase">
+        </parameter>
+        <parameter name="p1" type="int">
+        </parameter>
+        <parameter name="p2" type="int">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="b" obfuscated="true" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="b" static="false" type="com.marketo.ab.b" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+        <parameter name="p1" type="java.lang.String[]">
+        </parameter>
+      </constructor>
+      <field deprecated="not deprecated" final="false" name="a" static="false" transient="false" type="java.lang.String[]" type-generic-aware="java.lang.String[]" value="null" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="b" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="c" obfuscated="true" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="c" static="false" type="com.marketo.ab.c" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="com.marketo.ab.c" static="true" synchronized="true" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="boolean">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="org.json.JSONObject" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+        <exception name="JSONException" type="org.json.JSONException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+        <parameter name="p1" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+        <parameter name="p1" type="java.lang.String">
+        </parameter>
+        <parameter name="p2" type="org.json.JSONObject">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+        <parameter name="p1" type="org.json.JSONObject">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="long">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="org.json.JSONObject">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="boolean">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="long">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="org.json.JSONObject">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="boolean">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="long">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="e" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="e" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="f" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="g" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="c.1" obfuscated="true" static="false" visibility="">
+      <implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="c.2" obfuscated="true" static="false" visibility="">
+      <implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="c.3" obfuscated="true" static="false" visibility="">
+      <implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="c.4" obfuscated="true" static="false" visibility="">
+      <implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="c.5" obfuscated="true" static="false" visibility="">
+      <implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="d" obfuscated="true" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="d" static="false" type="com.marketo.ab.d" visibility="public">
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.Runnable">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.Runnable">
+        </parameter>
+        <parameter name="p1" type="long">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.Runnable">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.Runnable">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="android.os.HandlerThread" extends-generic-aware="android.os.HandlerThread" final="false" name="e" obfuscated="true" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="e" static="false" type="com.marketo.ab.e" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </constructor>
+    </class>
+  </package>
+  <package name="com.marketo.base">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="a" obfuscated="true" static="false" visibility="public">
+      <field deprecated="not deprecated" final="false" name="a" static="true" transient="false" type="boolean" type-generic-aware="boolean" visibility="public" volatile="false">
+      </field>
+    </class>
+  </package>
+  <package name="com.marketo.errors">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Throwable" extends-generic-aware="java.lang.Throwable" final="false" name="MktoException" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="MktoException" static="false" type="com.marketo.errors.MktoException" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+        <parameter name="p1" type="int">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="MktoException" static="false" type="com.marketo.errors.MktoException" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+        <parameter name="p1" type="java.lang.String">
+        </parameter>
+        <parameter name="p2" type="int">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="MktoException" static="false" type="com.marketo.errors.MktoException" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getErrorCode" native="false" return="int" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getErrorType" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+      </method>
+    </class>
+  </package>
+  <package name="com.marketo.inapp">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="a" obfuscated="true" static="false" visibility="public">
+      <implements name="android.app.Application.ActivityLifecycleCallbacks" name-generic-aware="android.app.Application.ActivityLifecycleCallbacks">
+      </implements>
+      <constructor deprecated="not deprecated" final="false" name="a" static="false" type="com.marketo.inapp.a" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="android.app.Activity" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.app.Activity">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onActivityCreated" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.app.Activity">
+        </parameter>
+        <parameter name="p1" type="android.os.Bundle">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onActivityDestroyed" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.app.Activity">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onActivityPaused" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.app.Activity">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onActivityResumed" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.app.Activity">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onActivitySaveInstanceState" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.app.Activity">
+        </parameter>
+        <parameter name="p1" type="android.os.Bundle">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onActivityStarted" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.app.Activity">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onActivityStopped" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.app.Activity">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="a.1" obfuscated="true" static="true" visibility="" />
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="a.a" obfuscated="true" static="false" visibility="" />
+  </package>
+  <package name="com.marketo.inapp.controlers">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="a" obfuscated="true" static="false" visibility="public">
+      <implements name="android.view.View.OnClickListener" name-generic-aware="android.view.View.OnClickListener">
+      </implements>
+      <constructor deprecated="not deprecated" final="false" name="a" static="false" type="com.marketo.inapp.controlers.a" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+        <parameter name="p1" type="com.marketo.inapp.models.InAppMessage">
+        </parameter>
+        <parameter name="p2" type="com.marketo.inapp.controlers.b">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.view.View">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="android.app.DialogFragment" extends-generic-aware="android.app.DialogFragment" final="false" name="b" obfuscated="true" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="b" static="false" type="com.marketo.inapp.controlers.b" visibility="public">
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="com.marketo.inapp.controlers.b" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="com.marketo.inapp.models.InAppMessage">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="c" obfuscated="true" static="false" visibility="public">
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="android.view.View" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="android.view.LayoutInflater">
+        </parameter>
+        <parameter name="p2" type="com.marketo.inapp.controlers.b">
+        </parameter>
+        <parameter name="p3" type="com.marketo.inapp.models.InAppMessage">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="c.1" obfuscated="true" static="true" visibility="" />
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.marketo.inapp.controlers.c.a&gt;" final="true" name="c.a" obfuscated="true" static="true" visibility="public">
+      <method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="com.marketo.inapp.controlers.c.a" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="values" native="false" return="com.marketo.inapp.controlers.c.a[]" static="true" synchronized="false" visibility="public">
+      </method>
+      <field deprecated="not deprecated" final="true" name="a" static="true" transient="false" type="com.marketo.inapp.controlers.c.a" type-generic-aware="com.marketo.inapp.controlers.c.a" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="b" static="true" transient="false" type="com.marketo.inapp.controlers.c.a" type-generic-aware="com.marketo.inapp.controlers.c.a" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="c" static="true" transient="false" type="com.marketo.inapp.controlers.c.a" type-generic-aware="com.marketo.inapp.controlers.c.a" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="d" static="true" transient="false" type="com.marketo.inapp.controlers.c.a" type-generic-aware="com.marketo.inapp.controlers.c.a" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="e" static="true" transient="false" type="com.marketo.inapp.controlers.c.a" type-generic-aware="com.marketo.inapp.controlers.c.a" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="f" static="true" transient="false" type="com.marketo.inapp.controlers.c.a" type-generic-aware="com.marketo.inapp.controlers.c.a" visibility="public" volatile="false">
+      </field>
+    </class>
+  </package>
+  <package name="com.marketo.inapp.layout">
+    <class abstract="false" deprecated="not deprecated" extends="com.marketo.inapp.layout.g" extends-generic-aware="com.marketo.inapp.layout.g" final="true" name="a" obfuscated="true" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="a" static="false" type="com.marketo.inapp.layout.a" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="com.marketo.inapp.controlers.b">
+        </parameter>
+        <parameter name="p2" type="com.marketo.inapp.models.InAppMessage">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.view.LayoutInflater">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.view.View">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.marketo.inapp.layout.g" extends-generic-aware="com.marketo.inapp.layout.g" final="true" name="b" obfuscated="true" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="b" static="false" type="com.marketo.inapp.layout.b" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="com.marketo.inapp.controlers.b">
+        </parameter>
+        <parameter name="p2" type="com.marketo.inapp.models.InAppMessage">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.view.LayoutInflater">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.view.View">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.marketo.inapp.layout.g" extends-generic-aware="com.marketo.inapp.layout.g" final="true" name="c" obfuscated="true" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="c" static="false" type="com.marketo.inapp.layout.c" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="com.marketo.inapp.controlers.b">
+        </parameter>
+        <parameter name="p2" type="com.marketo.inapp.models.InAppMessage">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.view.LayoutInflater">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.view.View">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.marketo.inapp.layout.g" extends-generic-aware="com.marketo.inapp.layout.g" final="true" name="d" obfuscated="true" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="d" static="false" type="com.marketo.inapp.layout.d" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="com.marketo.inapp.controlers.b">
+        </parameter>
+        <parameter name="p2" type="com.marketo.inapp.models.InAppMessage">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.view.LayoutInflater">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.view.View">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.marketo.inapp.layout.g" extends-generic-aware="com.marketo.inapp.layout.g" final="true" name="e" obfuscated="true" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="e" static="false" type="com.marketo.inapp.layout.e" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="com.marketo.inapp.controlers.b">
+        </parameter>
+        <parameter name="p2" type="com.marketo.inapp.models.InAppMessage">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.view.LayoutInflater">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.view.View">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.marketo.inapp.layout.g" extends-generic-aware="com.marketo.inapp.layout.g" final="true" name="f" obfuscated="true" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="f" static="false" type="com.marketo.inapp.layout.f" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="com.marketo.inapp.controlers.b">
+        </parameter>
+        <parameter name="p2" type="com.marketo.inapp.models.InAppMessage">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.view.LayoutInflater">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.view.View">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="g" obfuscated="true" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="g" static="false" type="com.marketo.inapp.layout.g" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="com.marketo.inapp.controlers.b">
+        </parameter>
+        <parameter name="p2" type="com.marketo.inapp.models.InAppMessage">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="android.graphics.drawable.GradientDrawable" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.graphics.drawable.GradientDrawable">
+        </parameter>
+        <parameter name="p1" type="com.marketo.inapp.models.InAppButton">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="android.view.ViewGroup.LayoutParams" static="false" synchronized="false" visibility="protected">
+        <parameter name="p0" type="com.marketo.inapp.views.CloseButton">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="p0" type="android.view.View">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="int" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="p0" type="android.view.View">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="p0" type="android.view.View">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="e" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="p0" type="android.view.View">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="f" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="p0" type="android.view.View">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="g" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="p0" type="android.view.View">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="h" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="p0" type="android.view.View">
+        </parameter>
+      </method>
+      <field deprecated="not deprecated" final="true" name="a" static="false" transient="false" type="com.marketo.inapp.models.InAppMessage" type-generic-aware="com.marketo.inapp.models.InAppMessage" visibility="protected" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="b" static="false" transient="false" type="android.content.Context" type-generic-aware="android.content.Context" visibility="protected" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="g.1" obfuscated="true" static="false" visibility="">
+      <implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="g.2" obfuscated="true" static="false" visibility="">
+      <implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="g.3" obfuscated="true" static="false" visibility="">
+      <implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="g.4" obfuscated="true" static="true" visibility="" />
+  </package>
+  <package name="com.marketo.inapp.models">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="InAppBackground" static="false" visibility="public">
+      <implements name="android.os.Parcelable" name-generic-aware="android.os.Parcelable">
+      </implements>
+      <constructor deprecated="not deprecated" final="false" name="InAppBackground" static="false" type="com.marketo.inapp.models.InAppBackground" visibility="public">
+        <parameter name="p0" type="org.json.JSONObject">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="InAppBackground" static="false" type="com.marketo.inapp.models.InAppBackground" visibility="public">
+        <parameter name="p0" type="android.os.Parcel">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="e" native="false" return="int" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="f" native="false" return="int" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.os.Parcel">
+        </parameter>
+        <parameter name="p1" type="int">
+        </parameter>
+      </method>
+      <field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" type-generic-aware="android.os.Parcelable.Creator&lt;com.marketo.inapp.models.InAppBackground&gt;" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="InAppBackground.1" obfuscated="true" static="true" visibility="">
+      <implements name="android.os.Parcelable.Creator" name-generic-aware="android.os.Parcelable.Creator&lt;com.marketo.inapp.models.InAppBackground&gt;">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="com.marketo.inapp.models.InAppBackground" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.os.Parcel">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="com.marketo.inapp.models.InAppBackground[]" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="createFromParcel" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.os.Parcel">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="newArray" native="false" return="java.lang.Object[]" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="InAppButton" static="false" visibility="public">
+      <implements name="android.os.Parcelable" name-generic-aware="android.os.Parcelable">
+      </implements>
+      <constructor deprecated="not deprecated" final="false" name="InAppButton" static="false" type="com.marketo.inapp.models.InAppButton" visibility="public">
+        <parameter name="p0" type="org.json.JSONObject">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="InAppButton" static="false" type="com.marketo.inapp.models.InAppButton" visibility="public">
+        <parameter name="p0" type="android.os.Parcel">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="e" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="f" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="g" native="false" return="int" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="h" native="false" return="com.marketo.inapp.models.InAppButton.a" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="i" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="j" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="k" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="l" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.os.Parcel">
+        </parameter>
+        <parameter name="p1" type="int">
+        </parameter>
+      </method>
+      <field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" type-generic-aware="android.os.Parcelable.Creator&lt;com.marketo.inapp.models.InAppButton&gt;" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="InAppButton.1" obfuscated="true" static="true" visibility="">
+      <implements name="android.os.Parcelable.Creator" name-generic-aware="android.os.Parcelable.Creator&lt;com.marketo.inapp.models.InAppButton&gt;">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="com.marketo.inapp.models.InAppButton" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.os.Parcel">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="com.marketo.inapp.models.InAppButton[]" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="createFromParcel" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.os.Parcel">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="newArray" native="false" return="java.lang.Object[]" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.marketo.inapp.models.InAppButton.a&gt;" final="true" name="InAppButton.a" obfuscated="true" static="true" visibility="public">
+      <method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="com.marketo.inapp.models.InAppButton.a" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="values" native="false" return="com.marketo.inapp.models.InAppButton.a[]" static="true" synchronized="false" visibility="public">
+      </method>
+      <field deprecated="not deprecated" final="true" name="a" static="true" transient="false" type="com.marketo.inapp.models.InAppButton.a" type-generic-aware="com.marketo.inapp.models.InAppButton.a" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="b" static="true" transient="false" type="com.marketo.inapp.models.InAppButton.a" type-generic-aware="com.marketo.inapp.models.InAppButton.a" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="c" static="true" transient="false" type="com.marketo.inapp.models.InAppButton.a" type-generic-aware="com.marketo.inapp.models.InAppButton.a" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="InAppCloseButton" static="false" visibility="public">
+      <implements name="android.os.Parcelable" name-generic-aware="android.os.Parcelable">
+      </implements>
+      <constructor deprecated="not deprecated" final="false" name="InAppCloseButton" static="false" type="com.marketo.inapp.models.InAppCloseButton" visibility="public">
+        <parameter name="p0" type="org.json.JSONObject">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="InAppCloseButton" static="false" type="com.marketo.inapp.models.InAppCloseButton" visibility="public">
+        <parameter name="p0" type="android.os.Parcel">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="com.marketo.inapp.models.InAppCloseButton.a" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.os.Parcel">
+        </parameter>
+        <parameter name="p1" type="int">
+        </parameter>
+      </method>
+      <field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" type-generic-aware="android.os.Parcelable.Creator&lt;com.marketo.inapp.models.InAppCloseButton&gt;" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="InAppCloseButton.1" obfuscated="true" static="true" visibility="">
+      <implements name="android.os.Parcelable.Creator" name-generic-aware="android.os.Parcelable.Creator&lt;com.marketo.inapp.models.InAppCloseButton&gt;">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="com.marketo.inapp.models.InAppCloseButton" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.os.Parcel">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="com.marketo.inapp.models.InAppCloseButton[]" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="createFromParcel" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.os.Parcel">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="newArray" native="false" return="java.lang.Object[]" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.marketo.inapp.models.InAppCloseButton.a&gt;" final="true" name="InAppCloseButton.a" obfuscated="true" static="true" visibility="public">
+      <method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="com.marketo.inapp.models.InAppCloseButton.a" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="values" native="false" return="com.marketo.inapp.models.InAppCloseButton.a[]" static="true" synchronized="false" visibility="public">
+      </method>
+      <field deprecated="not deprecated" final="true" name="a" static="true" transient="false" type="com.marketo.inapp.models.InAppCloseButton.a" type-generic-aware="com.marketo.inapp.models.InAppCloseButton.a" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="b" static="true" transient="false" type="com.marketo.inapp.models.InAppCloseButton.a" type-generic-aware="com.marketo.inapp.models.InAppCloseButton.a" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="c" static="true" transient="false" type="com.marketo.inapp.models.InAppCloseButton.a" type-generic-aware="com.marketo.inapp.models.InAppCloseButton.a" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="d" static="true" transient="false" type="com.marketo.inapp.models.InAppCloseButton.a" type-generic-aware="com.marketo.inapp.models.InAppCloseButton.a" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="e" static="true" transient="false" type="com.marketo.inapp.models.InAppCloseButton.a" type-generic-aware="com.marketo.inapp.models.InAppCloseButton.a" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="InAppImage" static="false" visibility="public">
+      <implements name="android.os.Parcelable" name-generic-aware="android.os.Parcelable">
+      </implements>
+      <constructor deprecated="not deprecated" final="false" name="InAppImage" static="false" type="com.marketo.inapp.models.InAppImage" visibility="public">
+        <parameter name="p0" type="org.json.JSONObject">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="InAppImage" static="false" type="com.marketo.inapp.models.InAppImage" visibility="public">
+        <parameter name="p0" type="android.os.Parcel">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="com.marketo.inapp.models.InAppImage.a" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="int" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="int" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="e" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="f" native="false" return="int" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="g" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.os.Parcel">
+        </parameter>
+        <parameter name="p1" type="int">
+        </parameter>
+      </method>
+      <field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" type-generic-aware="android.os.Parcelable.Creator&lt;com.marketo.inapp.models.InAppImage&gt;" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="InAppImage.1" obfuscated="true" static="true" visibility="">
+      <implements name="android.os.Parcelable.Creator" name-generic-aware="android.os.Parcelable.Creator&lt;com.marketo.inapp.models.InAppImage&gt;">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="com.marketo.inapp.models.InAppImage" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.os.Parcel">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="com.marketo.inapp.models.InAppImage[]" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="createFromParcel" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.os.Parcel">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="newArray" native="false" return="java.lang.Object[]" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.marketo.inapp.models.InAppImage.a&gt;" final="true" name="InAppImage.a" obfuscated="true" static="true" visibility="public">
+      <method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="com.marketo.inapp.models.InAppImage.a" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="values" native="false" return="com.marketo.inapp.models.InAppImage.a[]" static="true" synchronized="false" visibility="public">
+      </method>
+      <field deprecated="not deprecated" final="true" name="a" static="true" transient="false" type="com.marketo.inapp.models.InAppImage.a" type-generic-aware="com.marketo.inapp.models.InAppImage.a" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="b" static="true" transient="false" type="com.marketo.inapp.models.InAppImage.a" type-generic-aware="com.marketo.inapp.models.InAppImage.a" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="c" static="true" transient="false" type="com.marketo.inapp.models.InAppImage.a" type-generic-aware="com.marketo.inapp.models.InAppImage.a" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="InAppMessage" static="false" visibility="public">
+      <implements name="android.os.Parcelable" name-generic-aware="android.os.Parcelable">
+      </implements>
+      <constructor deprecated="not deprecated" final="false" name="InAppMessage" static="false" type="com.marketo.inapp.models.InAppMessage" visibility="public">
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="InAppMessage" static="false" type="com.marketo.inapp.models.InAppMessage" visibility="public">
+        <parameter name="p0" type="org.json.JSONObject">
+        </parameter>
+        <parameter name="p1" type="android.content.Context">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="com.marketo.inapp.controlers.c.a" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="com.marketo.inapp.models.InAppMessage.a" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+        <exception name="JSONException" type="org.json.JSONException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="void" static="false" synchronized="true" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="e" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="f" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="g" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="h" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="i" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <exception name="Exception" type="java.lang.Exception">
+        </exception>
+        <exception name="MktoException" type="com.marketo.errors.MktoException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="j" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="k" native="false" return="com.marketo.inapp.models.InAppBackground" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="l" native="false" return="com.marketo.inapp.models.InAppImage" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="m" native="false" return="com.marketo.inapp.models.InAppCloseButton" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="n" native="false" return="com.marketo.inapp.models.InAppText" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="o" native="false" return="com.marketo.inapp.models.InAppButton" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="p" native="false" return="com.marketo.inapp.models.InAppText" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="q" native="false" return="com.marketo.inapp.models.InAppButton" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="r" native="false" return="com.marketo.inapp.models.InAppMessage.b" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.os.Parcel">
+        </parameter>
+        <parameter name="p1" type="int">
+        </parameter>
+      </method>
+      <field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" type-generic-aware="android.os.Parcelable.Creator&lt;com.marketo.inapp.models.InAppMessage&gt;" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="InAppMessage.1" obfuscated="true" static="true" visibility="">
+      <implements name="android.os.Parcelable.Creator" name-generic-aware="android.os.Parcelable.Creator&lt;com.marketo.inapp.models.InAppMessage&gt;">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="com.marketo.inapp.models.InAppMessage" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.os.Parcel">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="com.marketo.inapp.models.InAppMessage[]" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="createFromParcel" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.os.Parcel">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="newArray" native="false" return="java.lang.Object[]" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="InAppMessage.2" obfuscated="true" static="true" visibility="" />
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.marketo.inapp.models.InAppMessage.a&gt;" final="true" name="InAppMessage.a" obfuscated="true" static="true" visibility="public">
+      <method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="com.marketo.inapp.models.InAppMessage.a" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="values" native="false" return="com.marketo.inapp.models.InAppMessage.a[]" static="true" synchronized="false" visibility="public">
+      </method>
+      <field deprecated="not deprecated" final="true" name="a" static="true" transient="false" type="com.marketo.inapp.models.InAppMessage.a" type-generic-aware="com.marketo.inapp.models.InAppMessage.a" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="b" static="true" transient="false" type="com.marketo.inapp.models.InAppMessage.a" type-generic-aware="com.marketo.inapp.models.InAppMessage.a" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="c" static="true" transient="false" type="com.marketo.inapp.models.InAppMessage.a" type-generic-aware="com.marketo.inapp.models.InAppMessage.a" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="d" static="true" transient="false" type="com.marketo.inapp.models.InAppMessage.a" type-generic-aware="com.marketo.inapp.models.InAppMessage.a" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="e" static="true" transient="false" type="com.marketo.inapp.models.InAppMessage.a" type-generic-aware="com.marketo.inapp.models.InAppMessage.a" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.marketo.inapp.models.InAppMessage.b&gt;" final="true" name="InAppMessage.b" obfuscated="true" static="true" visibility="public">
+      <method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="com.marketo.inapp.models.InAppMessage.b" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="values" native="false" return="com.marketo.inapp.models.InAppMessage.b[]" static="true" synchronized="false" visibility="public">
+      </method>
+      <field deprecated="not deprecated" final="true" name="a" static="true" transient="false" type="com.marketo.inapp.models.InAppMessage.b" type-generic-aware="com.marketo.inapp.models.InAppMessage.b" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="b" static="true" transient="false" type="com.marketo.inapp.models.InAppMessage.b" type-generic-aware="com.marketo.inapp.models.InAppMessage.b" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="c" static="true" transient="false" type="com.marketo.inapp.models.InAppMessage.b" type-generic-aware="com.marketo.inapp.models.InAppMessage.b" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="InAppText" static="false" visibility="public">
+      <implements name="android.os.Parcelable" name-generic-aware="android.os.Parcelable">
+      </implements>
+      <constructor deprecated="not deprecated" final="false" name="InAppText" static="false" type="com.marketo.inapp.models.InAppText" visibility="public">
+        <parameter name="p0" type="org.json.JSONObject">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="InAppText" static="false" type="com.marketo.inapp.models.InAppText" visibility="public">
+        <parameter name="p0" type="android.os.Parcel">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="int" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="e" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="f" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="g" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="h" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.os.Parcel">
+        </parameter>
+        <parameter name="p1" type="int">
+        </parameter>
+      </method>
+      <field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" type-generic-aware="android.os.Parcelable.Creator&lt;com.marketo.inapp.models.InAppText&gt;" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="InAppText.1" obfuscated="true" static="true" visibility="">
+      <implements name="android.os.Parcelable.Creator" name-generic-aware="android.os.Parcelable.Creator&lt;com.marketo.inapp.models.InAppText&gt;">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="com.marketo.inapp.models.InAppText" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.os.Parcel">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="com.marketo.inapp.models.InAppText[]" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="createFromParcel" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.os.Parcel">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="newArray" native="false" return="java.lang.Object[]" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int">
+        </parameter>
+      </method>
+    </class>
+  </package>
+  <package name="com.marketo.inapp.views">
+    <class abstract="false" deprecated="not deprecated" extends="android.view.View" extends-generic-aware="android.view.View" final="false" name="CloseButton" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="CloseButton" static="false" type="com.marketo.inapp.views.CloseButton" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="android.util.AttributeSet">
+        </parameter>
+        <parameter name="p2" type="int">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="CloseButton" static="false" type="com.marketo.inapp.views.CloseButton" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="android.util.AttributeSet">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="CloseButton" static="false" type="com.marketo.inapp.views.CloseButton" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getStyle" native="false" return="com.marketo.inapp.models.InAppCloseButton.a" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getTint" native="false" return="int" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setStyle" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="com.marketo.inapp.models.InAppCloseButton.a">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setTint" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="android.widget.LinearLayout" extends-generic-aware="android.widget.LinearLayout" final="false" name="InAppLinearLayout" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="InAppLinearLayout" static="false" type="com.marketo.inapp.views.InAppLinearLayout" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="android.util.AttributeSet">
+        </parameter>
+        <parameter name="p2" type="int">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="InAppLinearLayout" static="false" type="com.marketo.inapp.views.InAppLinearLayout" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="android.util.AttributeSet">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="InAppLinearLayout" static="false" type="com.marketo.inapp.views.InAppLinearLayout" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+      </constructor>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="android.widget.ScrollView" extends-generic-aware="android.widget.ScrollView" final="false" name="InAppScrollView" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="InAppScrollView" static="false" type="com.marketo.inapp.views.InAppScrollView" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="android.util.AttributeSet">
+        </parameter>
+        <parameter name="p2" type="int">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="InAppScrollView" static="false" type="com.marketo.inapp.views.InAppScrollView" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="android.util.AttributeSet">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="InAppScrollView" static="false" type="com.marketo.inapp.views.InAppScrollView" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+      </constructor>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="android.widget.ImageView" extends-generic-aware="android.widget.ImageView" final="true" name="ScalableImageView" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="ScalableImageView" static="false" type="com.marketo.inapp.views.ScalableImageView" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="android.util.AttributeSet">
+        </parameter>
+        <parameter name="p2" type="int">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="ScalableImageView" static="false" type="com.marketo.inapp.views.ScalableImageView" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="android.util.AttributeSet">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="ScalableImageView" static="false" type="com.marketo.inapp.views.ScalableImageView" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getScale" native="false" return="com.marketo.inapp.models.InAppImage.a" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="com.marketo.inapp.models.InAppImage.a">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ScalableImageView.1" obfuscated="true" static="true" visibility="" />
+    <class abstract="false" deprecated="not deprecated" extends="android.graphics.drawable.Drawable" extends-generic-aware="android.graphics.drawable.Drawable" final="true" name="a" obfuscated="true" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="a" static="false" type="com.marketo.inapp.views.a" visibility="public">
+        <parameter name="p0" type="android.graphics.Bitmap">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="com.marketo.inapp.views.a" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.res.ColorStateList">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="com.marketo.inapp.views.a" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.widget.ImageView.ScaleType">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="com.marketo.inapp.views.a" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="float">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="com.marketo.inapp.views.a" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="float">
+        </parameter>
+        <parameter name="p1" type="float">
+        </parameter>
+        <parameter name="p2" type="float">
+        </parameter>
+        <parameter name="p3" type="float">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="com.marketo.inapp.views.a" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="com.marketo.inapp.views.a" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="float">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="draw" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.graphics.Canvas">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getOpacity" native="false" return="int" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setAlpha" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setColorFilter" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.graphics.ColorFilter">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="a.1" obfuscated="true" static="true" visibility="" />
+  </package>
+  <package name="marketo.collector">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="a" obfuscated="true" static="false" visibility="public">
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="org.json.JSONObject" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.res.Configuration">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.res.Configuration">
+        </parameter>
+      </method>
+    </class>
+  </package>
+  <package name="marketo.push">
+    <class abstract="true" deprecated="not deprecated" extends="android.content.BroadcastReceiver" extends-generic-aware="android.content.BroadcastReceiver" final="false" name="MktoWakefulBroadcastReceiver" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="MktoWakefulBroadcastReceiver" static="false" type="marketo.push.MktoWakefulBroadcastReceiver" visibility="public">
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="android.content.ComponentName" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="android.content.Intent">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Intent">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="a" obfuscated="true" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="a" static="false" type="marketo.push.a" visibility="public">
+        <parameter name="p0" type="org.json.JSONObject">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="long">
+        </parameter>
+        <exception name="MktoException" type="com.marketo.errors.MktoException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="long">
+        </parameter>
+        <exception name="MktoException" type="com.marketo.errors.MktoException">
+        </exception>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="b" obfuscated="true" static="false" visibility="public">
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="android.content.Intent" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="android.content.Intent">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="java.lang.String...">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+      </method>
+    </class>
+  </package>
+  <package name="marketo.utils">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="a" obfuscated="true" static="false" visibility="public">
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="b" obfuscated="true" static="false" visibility="public">
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="marketo.utils.b" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.io.File" static="false" synchronized="true" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+        <parameter name="p1" type="java.lang.String">
+        </parameter>
+        <exception name="Exception" type="java.lang.Exception">
+        </exception>
+        <exception name="MktoException" type="com.marketo.errors.MktoException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="boolean" static="false" synchronized="true" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+        <parameter name="p1" type="java.lang.String">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="c" obfuscated="true" static="false" visibility="public">
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="org.json.JSONObject" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+        <parameter name="p1" type="android.content.Context">
+        </parameter>
+        <exception name="MktoException" type="com.marketo.errors.MktoException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="org.json.JSONObject" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+        <parameter name="p1" type="java.lang.String">
+        </parameter>
+        <parameter name="p2" type="android.content.Context">
+        </parameter>
+        <exception name="MktoException" type="com.marketo.errors.MktoException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="org.json.JSONObject" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+        <parameter name="p1" type="android.content.Context">
+        </parameter>
+        <exception name="MktoException" type="com.marketo.errors.MktoException">
+        </exception>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="c.1" obfuscated="true" static="true" visibility="" />
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;marketo.utils.c.a&gt;" final="true" name="c.a" obfuscated="true" static="true" visibility="">
+      <field deprecated="not deprecated" final="true" name="a" static="true" transient="false" type="marketo.utils.c.a" type-generic-aware="marketo.utils.c.a" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="b" static="true" transient="false" type="marketo.utils.c.a" type-generic-aware="marketo.utils.c.a" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="c" static="true" transient="false" type="marketo.utils.c.a" type-generic-aware="marketo.utils.c.a" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="c.b" obfuscated="true" static="true" visibility="" />
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="d" obfuscated="true" static="false" visibility="public">
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="org.json.JSONObject" static="true" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="java.lang.String">
+        </parameter>
+        <parameter name="p2" type="boolean">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="int" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="java.lang.String">
+        </parameter>
+        <parameter name="p2" type="int">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="java.lang.String">
+        </parameter>
+        <parameter name="p2" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="long" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="java.lang.String">
+        </parameter>
+        <parameter name="p2" type="long">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="org.json.JSONObject">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="a" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.CharSequence">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+        <parameter name="p1" type="java.lang.String">
+        </parameter>
+        <parameter name="p2" type="long">
+        </parameter>
+        <parameter name="p3" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="int" static="true" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="java.lang.String">
+        </parameter>
+        <parameter name="p2" type="boolean">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="java.lang.String">
+        </parameter>
+        <parameter name="p2" type="int">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="java.lang.String">
+        </parameter>
+        <parameter name="p2" type="long">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="float" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="int">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="long" static="true" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="java.lang.CharSequence" static="true" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="org.json.JSONObject" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="e" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="e" native="false" return="android.location.Location" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="e" native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="f" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="f" native="false" return="org.json.JSONObject" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="g" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+      </method>
+      <field deprecated="not deprecated" final="false" name="a" static="true" transient="false" type="java.lang.Boolean" type-generic-aware="java.lang.Boolean" visibility="protected" volatile="false">
+      </field>
+    </class>
+  </package>
+</api>

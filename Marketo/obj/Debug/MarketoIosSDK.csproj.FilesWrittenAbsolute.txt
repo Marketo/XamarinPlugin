@@ -1,5 +1,5 @@
-/Users/rohit/Projects/Marketo/Marketo/obj/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
-/Users/rohit/Projects/Marketo/Marketo/bin/Debug/Marketo.dll.mdb
-/Users/rohit/Projects/Marketo/Marketo/bin/Debug/Marketo.dll
-/Users/rohit/Projects/Marketo/Marketo/obj/Debug/Marketo.dll
-/Users/rohit/Projects/Marketo/Marketo/obj/Debug/Marketo.dll.mdb
+/Users/manishpande/Documents/Vessel/XamarinPlugin/Marketo/obj/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
+/Users/manishpande/Documents/Vessel/XamarinPlugin/Marketo/bin/Debug/Marketo.pdb
+/Users/manishpande/Documents/Vessel/XamarinPlugin/Marketo/bin/Debug/Marketo.dll
+/Users/manishpande/Documents/Vessel/XamarinPlugin/Marketo/obj/Debug/Marketo.dll
+/Users/manishpande/Documents/Vessel/XamarinPlugin/Marketo/obj/Debug/Marketo.pdb

@@ -1,6 +1,11 @@
-﻿using Foundation;
+﻿using System;
+
+using Foundation;
 using UIKit;
 using MarketoApi;
+
+using UserNotifications;
+using ObjCRuntime;
 
 namespace TestMarketo
 {
@@ -22,14 +27,42 @@ namespace TestMarketo
 			// Override point for customization after application launch.
 			// If not required for your application you can safely delete this method
 			Marketo m = Marketo.sharedInstance();
-			m.InitializeWithMunchkinID("MUNC", "UnAwSXhja216b1Z5Z0EzbEZKMnNXR08x", new NSDictionary());
+			NSDictionary d = (launchOptions == null) ? new NSDictionary() : launchOptions;
+			m.InitializeWithMunchkinID("352-XEU-842","UnAwSXhja216b1Z5Z0EzbEZKMnNXR08x", null);
 
 			MarketoLead lead = new MarketoLead();
 			lead.SetEmail("xamarin@gmail.com");
 
-			 
 			m.AssociateLead(lead);
 
+			// Register for push notifications
+			if (UIDevice.CurrentDevice.CheckSystemVersion(10, 0)) {
+				Type type = typeof(UNUserNotificationCenter);
+				IntPtr classHandle = Class.GetHandle(type);
+				if (classHandle != IntPtr.Zero) {
+					var options = UNAuthorizationOptions.Alert | UNAuthorizationOptions.Sound | UNAuthorizationOptions.Badge;
+					UNUserNotificationCenter.Current.RequestAuthorization(options, (approved, error) => {
+						if (error != null) {
+							System.Console.WriteLine("Permission Deninded");
+						}
+					});
+				}
+			} else if (application.RespondsToSelector(new Selector("registerUserNotificationSettings:"))) {
+				var notificationTypes = UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound;
+				var settings = UIUserNotificationSettings.GetSettingsForTypes(notificationTypes, null);
+				application.RegisterUserNotificationSettings(settings);
+			} else {
+				var notificationTypes = UIRemoteNotificationType.Alert | UIRemoteNotificationType.Badge | UIRemoteNotificationType.Sound;
+				application.RegisterForRemoteNotificationTypes(notificationTypes);
+			}
+			application.RegisterForRemoteNotifications();
+
+			MarketoActionMetaData data = new MarketoActionMetaData();
+			data.SetType("OnStart");
+			data.SetDetails("FristOpenOrForceClosed");
+			data.SetLength(1);
+			data.SetMetric(2);
+			m.ReportAction("Xamarin Event", data);
 
 			return true;
 		}
@@ -67,7 +100,6 @@ namespace TestMarketo
 
 		public override void DidReceiveRemoteNotification(UIApplication application, NSDictionary userInfo, System.Action<UIBackgroundFetchResult> completionHandler)
 		{
-			base.DidReceiveRemoteNotification(application, userInfo, completionHandler);
 			Marketo.sharedInstance().HandlePushNotification(userInfo);
 		}
 
@@ -75,18 +107,15 @@ namespace TestMarketo
 		{
 			Marketo.sharedInstance().Application(application, url, sourceApplication, annotation);
 			return base.OpenUrl(application, url, sourceApplication, annotation);
-
 		}
 
 		public override void RegisteredForRemoteNotifications(UIApplication application, NSData deviceToken)
 		{
-			base.RegisteredForRemoteNotifications(application, deviceToken);
 			Marketo.sharedInstance().RegisterPushDeviceToken(deviceToken);
 		}
 
 		public override void ReceivedLocalNotification(UIApplication application, UILocalNotification notification)
 		{
-			base.ReceivedLocalNotification(application, notification);
 			Marketo.sharedInstance().Application(application,notification);
 		}
 
