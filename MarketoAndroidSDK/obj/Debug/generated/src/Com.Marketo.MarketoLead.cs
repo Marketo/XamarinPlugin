@@ -72,8 +72,8 @@ namespace Com.Marketo {
 		// Metadata.xml XPath field reference: path="/api/package[@name='com.marketo']/class[@name='MarketoLead']/field[@name='KEY_TWITTER']"
 		[Register ("KEY_TWITTER")]
 		public const string KeyTwitter = (string) "twitterId";
-		internal static IntPtr java_class_handle;
-		internal static IntPtr class_ref {
+		internal static new IntPtr java_class_handle;
+		internal static new IntPtr class_ref {
 			get {
 				return JNIEnv.FindClass ("com/marketo/MarketoLead", ref java_class_handle);
 			}

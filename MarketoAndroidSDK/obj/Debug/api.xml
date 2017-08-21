@@ -90,9 +90,9 @@
 <parameter name="p0" type="android.content.Context">
 </parameter>
 </method>
-<field deprecated="not deprecated" final="true" name="SDK_VERSION" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;MarketoSDK 0.7.4&quot;" visibility="public" volatile="false">
+<field deprecated="not deprecated" final="true" name="SDK_VERSION" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;MarketoSDK 0.7.5&quot;" visibility="public" volatile="false">
 </field>
-<field deprecated="not deprecated" final="true" name="SDK_VERSION_CODE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;0.7.4&quot;" visibility="public" volatile="false">
+<field deprecated="not deprecated" final="true" name="SDK_VERSION_CODE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;0.7.5&quot;" visibility="public" volatile="false">
 </field>
 <field deprecated="not deprecated" final="true" name="SDK_VERSION_INT" static="true" transient="false" type="int" type-generic-aware="int" value="6" visibility="public" volatile="false">
 </field>
@@ -566,6 +566,10 @@
 </parameter>
 </method>
 <method abstract="false" deprecated="not deprecated" final="false" name="e" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="e" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
 </method>
 <method abstract="false" deprecated="not deprecated" final="false" name="f" native="false" return="void" static="false" synchronized="false" visibility="public">
 </method>

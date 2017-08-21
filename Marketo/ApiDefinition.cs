@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Drawing;
 
 using ObjCRuntime;
 using Foundation;
 using UIKit;
 using CoreGraphics;
-
+using UserNotifications;
 namespace MarketoApi
 {
 
@@ -57,8 +57,8 @@ namespace MarketoApi
 		[Export("registerPushDeviceToken:")]
 		void RegisterPushDeviceToken(NSData deviceToken);
 
-		[Export ("unregisterPushDeviceToken")]
-		void UnregisterPushDeviceToken ();
+		[Export("unregisterPushDeviceToken")]
+		void UnregisterPushDeviceToken();
 
 		[Export("trackPushNotification:")]
 		void TrackPushNotification(NSDictionary userInfo);
@@ -75,6 +75,9 @@ namespace MarketoApi
 		[Export("application:didReceiveLocalNotification:")]
 		void Application(UIApplication application, UILocalNotification notification);
 
+		[Export("userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:")]
+		void UserNotificationCenter(UNUserNotificationCenter center, UNNotificationResponse response, Action completionHandler);
+
 		[Export("setSecureSignature:")]
 		void SetSecureSignature(MKTSecuritySignature conf);
 
@@ -87,8 +90,8 @@ namespace MarketoApi
 		[Export("getDeviceId")]
 		string getDeviceId();
 
-		[Export ("reportAll")]
-		void ReportAll ();
+		[Export("reportAll")]
+		void ReportAll();
 	}
 
 	[BaseType(typeof(NSObject))]

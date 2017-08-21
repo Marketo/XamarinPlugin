@@ -24,8 +24,8 @@ namespace Com.Marketo {
 		// Metadata.xml XPath field reference: path="/api/package[@name='com.marketo']/class[@name='MarketoActionMetaData']/field[@name='KEY_ACTION_TYPE']"
 		[Register ("KEY_ACTION_TYPE")]
 		public const string KeyActionType = (string) "Action Type";
-		internal static IntPtr java_class_handle;
-		internal static IntPtr class_ref {
+		internal static new IntPtr java_class_handle;
+		internal static new IntPtr class_ref {
 			get {
 				return JNIEnv.FindClass ("com/marketo/MarketoActionMetaData", ref java_class_handle);
 			}

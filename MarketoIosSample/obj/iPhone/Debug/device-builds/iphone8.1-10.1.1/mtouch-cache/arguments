@@ -1,0 +1,42 @@
+# Version: 10.10.0.36 (d15-2: d2270eec)
+# [first argument, ignore] # --cache
+/Library/Frameworks/Xamarin.iOS.framework/Versions/10.10.0.36/lib/mtouch/mtouch.exe \
+	/Users/manishpande/Documents/Vessel/XamarinPlugin/MarketoIosSample/obj/iPhone/Debug/device-builds/iphone8.1-10.1.1/mtouch-cache \
+	--dev \
+	/Users/manishpande/Documents/Vessel/XamarinPlugin/MarketoIosSample/bin/iPhone/Debug/device-builds/iphone8.1-10.1.1/TestMarketo.app \
+	--executable \
+	TestMarketo \
+	--fastdev \
+	--debug \
+	--linksdkonly \
+	--sdkroot \
+	/Applications/Xcode.app/Contents/Developer \
+	--sdk \
+	10.3 \
+	--targetver \
+	10.1 \
+	--aot-options=-O=float32 \
+	--http-message-handler=HttpClientHandler \
+	--abi=arm64 \
+	--symbollist \
+	/Users/manishpande/Documents/Vessel/XamarinPlugin/MarketoIosSample/obj/iPhone/Debug/device-builds/iphone8.1-10.1.1/mtouch-symbols.list \
+	--dsym=no \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Mono.Data.Sqlite.dll \
+	-r \
+	/Users/manishpande/Documents/Vessel/XamarinPlugin/Marketo/bin/Debug/Marketo.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
+	-r \
+	/Users/manishpande/Documents/Vessel/XamarinPlugin/Marketo/bin/Debug/Marketo.dll \
+	--target-framework \
+	"Xamarin.iOS,v1.0" \
+	/Users/manishpande/Documents/Vessel/XamarinPlugin/MarketoIosSample/bin/iPhone/Debug/TestMarketo.exe \

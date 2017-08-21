@@ -1,0 +1,6 @@
+/Users/manishpande/Documents/Vessel/XamarinPlugin/MarketoAndroidSDK/bin/Debug/MarketoAndroiSDK.dll
+/Users/manishpande/Documents/Vessel/XamarinPlugin/MarketoAndroidSDK/bin/Debug/MarketoAndroiSDK.pdb
+/Users/manishpande/Documents/Vessel/XamarinPlugin/MarketoAndroidSDK/obj/Debug/MarketoAndroidSDK.csprojResolveAssemblyReference.cache
+/Users/manishpande/Documents/Vessel/XamarinPlugin/MarketoAndroidSDK/obj/Debug/MarketoAndroidSDK.csproj.CoreCompileInputs.cache
+/Users/manishpande/Documents/Vessel/XamarinPlugin/MarketoAndroidSDK/obj/Debug/MarketoAndroiSDK.dll
+/Users/manishpande/Documents/Vessel/XamarinPlugin/MarketoAndroidSDK/obj/Debug/MarketoAndroiSDK.pdb

@@ -6,7 +6,7 @@
 	<dict>
 		<key>output-files</key>
 		<array>
-			<string>/Users/manishpande/Documents/Vessel/Xamarin/Marketo-xamarin/MarketoIosSample/obj/iPhoneSimulator/Debug/actool/partial-info.plist</string>
+			<string>/Users/manishpande/Documents/Vessel/XamarinPlugin/MarketoIosSample/obj/iPhoneSimulator/Debug/actool/partial-info.plist</string>
 		</array>
 	</dict>
 </dict>

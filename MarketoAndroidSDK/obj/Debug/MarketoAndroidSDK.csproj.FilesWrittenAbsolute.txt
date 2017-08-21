@@ -1,6 +1,6 @@
-/Users/manishpande/Documents/Vessel/Xamarin/Marketo-xamarin/MarketoAndroidSDK/obj/Debug/MonoAndroid,Version=v6.0.AssemblyAttribute.cs
-/Users/manishpande/Documents/Vessel/Xamarin/Marketo-xamarin/MarketoAndroidSDK/obj/Debug/MarketoAndroiSDK.obj.Debug.__AndroidLibraryProjects__.zip
-/Users/manishpande/Documents/Vessel/Xamarin/Marketo-xamarin/MarketoAndroidSDK/bin/Debug/MarketoAndroiSDK.dll.mdb
-/Users/manishpande/Documents/Vessel/Xamarin/Marketo-xamarin/MarketoAndroidSDK/bin/Debug/MarketoAndroiSDK.dll
-/Users/manishpande/Documents/Vessel/Xamarin/Marketo-xamarin/MarketoAndroidSDK/obj/Debug/MarketoAndroiSDK.dll
-/Users/manishpande/Documents/Vessel/Xamarin/Marketo-xamarin/MarketoAndroidSDK/obj/Debug/MarketoAndroiSDK.dll.mdb
+/Users/manishpande/Documents/Vessel/XamarinPlugin/MarketoAndroidSDK/obj/Debug/MonoAndroid,Version=v6.0.AssemblyAttribute.cs
+/Users/manishpande/Documents/Vessel/XamarinPlugin/MarketoAndroidSDK/obj/Debug/MarketoAndroiSDK.obj.Debug.__AndroidLibraryProjects__.zip
+/Users/manishpande/Documents/Vessel/XamarinPlugin/MarketoAndroidSDK/bin/Debug/MarketoAndroiSDK.pdb
+/Users/manishpande/Documents/Vessel/XamarinPlugin/MarketoAndroidSDK/bin/Debug/MarketoAndroiSDK.dll
+/Users/manishpande/Documents/Vessel/XamarinPlugin/MarketoAndroidSDK/obj/Debug/MarketoAndroiSDK.dll
+/Users/manishpande/Documents/Vessel/XamarinPlugin/MarketoAndroidSDK/obj/Debug/MarketoAndroiSDK.pdb

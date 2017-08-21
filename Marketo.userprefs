@@ -1,11 +1,22 @@
-﻿<Properties StartupConfiguration="{5CA33EB3-E7D1-4BC8-8527-2398AA30000A}|Default">
-  <MonoDevelop.Ide.Workbench />
+﻿<Properties StartupConfiguration="{CCEC9914-C7E9-49DF-BA6B-AD9FC58577ED}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MarketoIosSample/AppDelegate.cs">
+    <Files>
+      <File FileName="MarketoIosSample/AppDelegate.cs" Line="31" Column="1" />
+      <File FileName="MarketoIosSample/Main.cs" Line="12" Column="1" />
+      <File FileName="Marketo/ApiDefinition.cs" Line="68" Column="9" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/manishpande/Documents/Vessel/XamarinPlugin/MarketoIosSample/AppDelegate.cs" relfile="MarketoIosSample/AppDelegate.cs" line="31" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.MarketoAndroidSDK PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.ItemProperties.MarketoIosSample PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.AA2E6CB1-7CF3-4286-B94E-DD7B0EB316D0" />
+  <MonoDevelop.Ide.ItemProperties.MarketoAndroidSDK PreferredExecutionTarget="Android.SelectDevice" />
+  <MonoDevelop.Ide.ItemProperties.MarketoIosSample PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.15414A51-6796-4C95-8460-B572BDFC70B5">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam DeveloperId="DKP73WEPFW" TeamId="8MWP62FKXY" />
+  </MonoDevelop.Ide.ItemProperties.MarketoIosSample>
+  <MonoDevelop.Ide.ItemProperties.MarketoAndroidSample PreferredExecutionTarget="Android.098976250ddf5049" />
   <MultiItemStartupConfigurations />
 </Properties>

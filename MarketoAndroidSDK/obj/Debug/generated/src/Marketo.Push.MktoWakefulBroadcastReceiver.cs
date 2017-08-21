@@ -8,8 +8,8 @@ namespace Marketo.Push {
 	[global::Android.Runtime.Register ("marketo/push/MktoWakefulBroadcastReceiver", DoNotGenerateAcw=true)]
 	public abstract partial class MktoWakefulBroadcastReceiver : global::Android.Content.BroadcastReceiver {
 
-		internal static IntPtr java_class_handle;
-		internal static IntPtr class_ref {
+		internal static new IntPtr java_class_handle;
+		internal static new IntPtr class_ref {
 			get {
 				return JNIEnv.FindClass ("marketo/push/MktoWakefulBroadcastReceiver", ref java_class_handle);
 			}

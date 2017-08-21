@@ -1,3 +1,7 @@
+_OBJC_CLASS_$_Marketo
+_OBJC_CLASS_$_MarketoActionMetaData
+_OBJC_CLASS_$_MarketoLead
+_OBJC_CLASS_$_MKTSecuritySignature
 _xamarin_start_wwan
 _xamarin_localized_string_format
 _xamarin_localized_string_format_1
@@ -321,8 +325,8 @@ _xamarin_get_block_descriptor
 _xamarin_timezone_get_names
 _xamarin_timezone_get_data
 _xamarin_GetFolderPath
-_xamarin_get_locale_country_code
 _xamarin_log
+_xamarin_get_locale_country_code
 _CreateZStream
 _CloseZStream
 _Flush
