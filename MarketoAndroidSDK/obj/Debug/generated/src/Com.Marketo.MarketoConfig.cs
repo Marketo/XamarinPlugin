@@ -12,8 +12,8 @@ namespace Com.Marketo {
 		[global::Android.Runtime.Register ("com/marketo/MarketoConfig$Notification", DoNotGenerateAcw=true)]
 		public partial class Notification : global::Java.Lang.Object {
 
-			internal static IntPtr java_class_handle;
-			internal static IntPtr class_ref {
+			internal static new IntPtr java_class_handle;
+			internal static new IntPtr class_ref {
 				get {
 					return JNIEnv.FindClass ("com/marketo/MarketoConfig$Notification", ref java_class_handle);
 				}
@@ -198,8 +198,8 @@ namespace Com.Marketo {
 		[global::Android.Runtime.Register ("com/marketo/MarketoConfig$SecureMode", DoNotGenerateAcw=true)]
 		public partial class SecureMode : global::Java.Lang.Object {
 
-			internal static IntPtr java_class_handle;
-			internal static IntPtr class_ref {
+			internal static new IntPtr java_class_handle;
+			internal static new IntPtr class_ref {
 				get {
 					return JNIEnv.FindClass ("com/marketo/MarketoConfig$SecureMode", ref java_class_handle);
 				}
@@ -554,6 +554,21 @@ namespace Com.Marketo {
 				}
 			}
 
+		}
+
+		internal static new IntPtr java_class_handle;
+		internal static new IntPtr class_ref {
+			get {
+				return JNIEnv.FindClass ("com/marketo/MarketoConfig", ref java_class_handle);
+			}
+		}
+
+		protected override IntPtr ThresholdClass {
+			get { return class_ref; }
+		}
+
+		protected override global::System.Type ThresholdType {
+			get { return typeof (MarketoConfig); }
 		}
 
 		protected MarketoConfig (IntPtr javaReference, JniHandleOwnership transfer) : base (javaReference, transfer) {}

@@ -99,9 +99,9 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "TestMarketoAndroid.dll" comes first in this list. */
 		"TestMarketoAndroid.dll",
+		"MarketoAndroiSDK.dll",
 		"Xamarin.Android.Support.v4.dll",
 		"Xamarin.Android.Support.v7.AppCompat.dll",
-		"MarketoAndroiSDK.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

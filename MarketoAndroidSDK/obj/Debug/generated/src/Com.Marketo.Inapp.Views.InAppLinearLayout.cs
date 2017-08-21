@@ -8,8 +8,8 @@ namespace Com.Marketo.Inapp.Views {
 	[global::Android.Runtime.Register ("com/marketo/inapp/views/InAppLinearLayout", DoNotGenerateAcw=true)]
 	public partial class InAppLinearLayout : global::Android.Widget.LinearLayout {
 
-		internal static IntPtr java_class_handle;
-		internal static IntPtr class_ref {
+		internal static new IntPtr java_class_handle;
+		internal static new IntPtr class_ref {
 			get {
 				return JNIEnv.FindClass ("com/marketo/inapp/views/InAppLinearLayout", ref java_class_handle);
 			}

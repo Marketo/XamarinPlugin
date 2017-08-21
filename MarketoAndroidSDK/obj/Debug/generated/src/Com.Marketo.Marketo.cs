@@ -11,17 +11,17 @@ namespace Com.Marketo {
 
 		// Metadata.xml XPath field reference: path="/api/package[@name='com.marketo']/class[@name='Marketo']/field[@name='SDK_VERSION']"
 		[Register ("SDK_VERSION")]
-		public const string SdkVersion = (string) "MarketoSDK 0.7.4";
+		public const string SdkVersion = (string) "MarketoSDK 0.7.5";
 
 		// Metadata.xml XPath field reference: path="/api/package[@name='com.marketo']/class[@name='Marketo']/field[@name='SDK_VERSION_CODE']"
 		[Register ("SDK_VERSION_CODE")]
-		public const string SdkVersionCode = (string) "0.7.4";
+		public const string SdkVersionCode = (string) "0.7.5";
 
 		// Metadata.xml XPath field reference: path="/api/package[@name='com.marketo']/class[@name='Marketo']/field[@name='SDK_VERSION_INT']"
 		[Register ("SDK_VERSION_INT")]
 		public const int SdkVersionInt = (int) 6;
-		internal static IntPtr java_class_handle;
-		internal static IntPtr class_ref {
+		internal static new IntPtr java_class_handle;
+		internal static new IntPtr class_ref {
 			get {
 				return JNIEnv.FindClass ("com/marketo/Marketo", ref java_class_handle);
 			}

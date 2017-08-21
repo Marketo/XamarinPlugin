@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Sdk>
-  <AndroidApiLevel>26</AndroidApiLevel>
-  <AndroidApiLevelName>26</AndroidApiLevelName>
+  <AndroidApiLevel>25</AndroidApiLevel>
+  <AndroidApiLevelName>25</AndroidApiLevelName>
   <AndroidNdkPath />
   <AndroidSdkBuildToolsPath>/Users/manishpande/Documents/Software/AndroidSDK/build-tools/26.0.0-rc1</AndroidSdkBuildToolsPath>
   <AndroidSdkBuildToolsBinPath>/Users/manishpande/Documents/Software/AndroidSDK/build-tools/26.0.0-rc1</AndroidSdkBuildToolsBinPath>
@@ -17,4 +17,5 @@
   <MonoAndroidIncludePath />
   <SupportedApiLevel>25</SupportedApiLevel>
   <AndroidSequencePointsMode>None</AndroidSequencePointsMode>
+  <LintToolPath>/Users/manishpande/Documents/Software/AndroidSDK/tools/bin</LintToolPath>
 </Sdk>

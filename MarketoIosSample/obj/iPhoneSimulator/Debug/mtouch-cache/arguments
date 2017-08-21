@@ -1,12 +1,11 @@
-# Version: 10.10.0.36 (d15-2: d2270eec)
+# Version: 10.12.0.18 (d15-3: 4a279c9a)
 # [first argument, ignore] # --cache
-/Library/Frameworks/Xamarin.iOS.framework/Versions/10.10.0.36/lib/mtouch/mtouch.exe \
+/Library/Frameworks/Xamarin.iOS.framework/Versions/10.12.0.18/lib/mtouch/mtouch.exe \
 	/Users/manishpande/Documents/Vessel/XamarinPlugin/MarketoIosSample/obj/iPhoneSimulator/Debug/mtouch-cache \
 	--sim \
 	/Users/manishpande/Documents/Vessel/XamarinPlugin/MarketoIosSample/bin/iPhoneSimulator/Debug/TestMarketo.app \
 	--executable \
 	TestMarketo \
-	--fastdev \
 	--debug \
 	--nolink \
 	--sdkroot \
@@ -14,26 +13,27 @@
 	--sdk \
 	10.3 \
 	--targetver \
-	9.3 \
+	10.1 \
+	--aot-options=-O=-float32 \
 	--http-message-handler=HttpClientHandler \
 	--abi=i386 \
 	--symbollist \
 	/Users/manishpande/Documents/Vessel/XamarinPlugin/MarketoIosSample/obj/iPhoneSimulator/Debug/mtouch-symbols.list \
 	--dsym=no \
 	-r \
+	/Users/manishpande/Documents/Vessel/XamarinPlugin/Marketo/bin/Debug/Marketo.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Mono.Data.Sqlite.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
+	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll \
 	-r \
-	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
-	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
-	-r \
-	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Mono.Data.Sqlite.dll \
-	-r \
-	/Users/manishpande/Documents/Vessel/XamarinPlugin/Marketo/bin/Debug/Marketo.dll \
-	-r \
-	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
 	-r \
 	/Users/manishpande/Documents/Vessel/XamarinPlugin/Marketo/bin/Debug/Marketo.dll \
 	--target-framework \
