@@ -8,8 +8,8 @@ namespace Com.Marketo.Errors {
 	[global::Android.Runtime.Register ("com/marketo/errors/MktoException", DoNotGenerateAcw=true)]
 	public partial class MktoException : global::Java.Lang.Throwable {
 
-		internal static IntPtr java_class_handle;
-		internal static IntPtr class_ref {
+		internal static new IntPtr java_class_handle;
+		internal static new IntPtr class_ref {
 			get {
 				return JNIEnv.FindClass ("com/marketo/errors/MktoException", ref java_class_handle);
 			}

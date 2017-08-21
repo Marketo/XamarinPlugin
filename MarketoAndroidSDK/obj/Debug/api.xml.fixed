@@ -90,9 +90,9 @@
         <parameter name="p0" type="android.content.Context">
         </parameter>
       </method>
-      <field deprecated="not deprecated" final="true" name="SDK_VERSION" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;MarketoSDK 0.7.4&quot;" visibility="public" volatile="false">
+      <field deprecated="not deprecated" final="true" name="SDK_VERSION" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;MarketoSDK 0.7.5&quot;" visibility="public" volatile="false">
       </field>
-      <field deprecated="not deprecated" final="true" name="SDK_VERSION_CODE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;0.7.4&quot;" visibility="public" volatile="false">
+      <field deprecated="not deprecated" final="true" name="SDK_VERSION_CODE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;0.7.5&quot;" visibility="public" volatile="false">
       </field>
       <field deprecated="not deprecated" final="true" name="SDK_VERSION_INT" static="true" transient="false" type="int" type-generic-aware="int" value="6" visibility="public" volatile="false">
       </field>

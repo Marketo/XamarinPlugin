@@ -8,8 +8,8 @@ namespace Com.Marketo {
 	[global::Android.Runtime.Register ("com/marketo/MarketoActivity", DoNotGenerateAcw=true)]
 	public partial class MarketoActivity : global::Android.App.Activity {
 
-		internal static IntPtr java_class_handle;
-		internal static IntPtr class_ref {
+		internal static new IntPtr java_class_handle;
+		internal static new IntPtr class_ref {
 			get {
 				return JNIEnv.FindClass ("com/marketo/MarketoActivity", ref java_class_handle);
 			}

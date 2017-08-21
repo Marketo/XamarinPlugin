@@ -8,8 +8,8 @@ namespace Com.Marketo.Inapp.Views {
 	[global::Android.Runtime.Register ("com/marketo/inapp/views/ScalableImageView", DoNotGenerateAcw=true)]
 	public sealed partial class ScalableImageView : global::Android.Widget.ImageView {
 
-		internal static IntPtr java_class_handle;
-		internal static IntPtr class_ref {
+		internal static new IntPtr java_class_handle;
+		internal static new IntPtr class_ref {
 			get {
 				return JNIEnv.FindClass ("com/marketo/inapp/views/ScalableImageView", ref java_class_handle);
 			}
